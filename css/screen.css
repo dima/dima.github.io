@@ -92,6 +92,10 @@ ul.posts {
   margin-bottom: 2em;
 }
 
+  .site img.header {
+    margin-bottom: 2em;
+  }
+
   .site .title a {
     color: #a00;
     text-decoration: none;
