@@ -1,3 +1,26 @@
-<html>
- <body>Hello World!</body>
-</html>
+---
+layout: default
+title: Dima Berastau
+---
+
+<div id="home">
+  <h1>Blog Posts</h1>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+  
+  <h1 id="books">Books</h1>
+  <ul class="posts">
+    <li><a href="http://manning.com/armstrong2">Enterprise Flexible Rails</a></li>
+    <li><a href="http://manning.com/armstrong3">Hello Flex 4</a></li>
+  </ul>
+  
+  <h1>Open Source Projects</h1>
+  <ul class="posts">
+    <li><a href="http://github.com/dima/ruboss_framework/">Ruboss Framework:</a> The RESTful way to develop Adobe Flex and AIR applications.</li>
+    <li><a href="http://github.com/dima/ruboss4ruby/">Ruboss4Ruby:</a> Ruboss Framework Rails 2.1+ and Merb 1.0 Integration Support (RubyGem)</li>
+  </ul>
+</div>
+  
