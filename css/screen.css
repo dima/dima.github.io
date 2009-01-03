@@ -17,8 +17,8 @@ html, body {
 
 body {
   background-color: white;
-  font-family: Georgia, serif;  
-  *font-size: small;
+  font-family: Georgia, serif;
+  font-size: 10pt;
   text-align: center;
 }
 
@@ -68,8 +68,6 @@ ul.posts {
 
   ul.posts span {
     color: #aaa;
-    font-family: Monaco, "Courier New", monospace;
-    font-size: 90%;
   }
 
 /*****************************************************************************/
