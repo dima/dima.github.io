@@ -90,11 +90,8 @@ ul.posts {
   margin-bottom: 2em;
 }
 
-  .site a.header {
-    text-decoration: none;
-  }
-
   .site img.header {
+    border-style: none;
     margin-bottom: 2em;
   }
 
