@@ -8,9 +8,3 @@ h1. {{ page.title }}
 p(meta). 21 Dec 2008 - Vancouver, BC
 
 Github is turning into a blogging platform!
-
-{% highlight ruby %}
-def foo
-  puts 'foo'
-end
-{% endhighlight %}
