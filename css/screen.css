@@ -68,8 +68,10 @@ ul.posts {
   }
   
   ul.posts li.post {
-    list-style-image: url('/images/calendar.png');
-    list-style-position: inside;
+    background-image:url('/images/calendar.png');
+    background-repeat:no-repeat;
+    background-position:0px 2px;
+    padding-left: 30px;
   }
 
   ul.posts span {
