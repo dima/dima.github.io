@@ -100,7 +100,8 @@ ul.posts {
 }
 
   .site img.header {
-    border-style: none;
+    border-top: 1px solid #666;
+    border-bottom: 1px solid #666;
     margin-bottom: 2em;
   }
 
