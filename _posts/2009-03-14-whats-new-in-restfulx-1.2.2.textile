@@ -11,9 +11,9 @@ h1. Overview
 
 Some of the key "themes" of this release are:
 
-  # *Distributed AIR apps* (Better push/pull workflow, out of the box distributed configuration for Rails back-end, etc)
-  # *schema_to_yaml integration* (helps with migrating existing Rails projects over to RestfulX)
-  # *more code generation options*
+  1. *Distributed AIR apps* (Better push/pull workflow, out of the box distributed configuration for Rails back-end, etc)
+  2. *schema_to_yaml integration* (helps with migrating existing Rails projects over to RestfulX)
+  3. *More code generation options*
 
 And of course bugfixing and a number of other features that we'll discuss further down.
 
