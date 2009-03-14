@@ -260,8 +260,7 @@ public function testFindAllWithIncludes():void {
 This will find all projects with @name@ that contains character @4@ in the local SQLite database. 
 For the projects that were found their @tasks@ and @contractor@ relationships will be pre-fetched as well.
 
-You can now send custom HTTP headers with @Rx.http()@ and @XMLHTTPServiceProvider@, @JSONHTTPServiceProvider@. 
-Just set @Rx.customHTTPHeaders@ and off you go.
+You can now send custom HTTP headers with @Rx.http()@ and @XMLHTTPServiceProvider@, @JSONHTTPServiceProvider@. Just set @Rx.customHTTPHeaders@ and off you go.
 
 More natural HasMany + Sort annotations in your RestfulX Flex models. It goes something like this:
 {% highlight as3 %}
