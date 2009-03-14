@@ -180,44 +180,6 @@ You can now use attachment_field as well as has_many_through keywords in your mo
 
 h2. Miscellaneous improvements
 
-You can now use [HasMany(sort="foo:descending,caseInscensitive,numeric")] annotations, along these lines
- 
-{% highlight as3 %}
-package foobar.models {
-  import mx.events.CollectionEvent;
-  import mx.utils.ObjectUtil;
-  
-  import org.restfulx.collections.ModelsCollection;
-  import org.restfulx.models.RxModel;
-  
-  [Resource(name="projects")]
-  [Bindable]
-  public class Project extends RxModel {
-    public static const LABEL:String = "name";
-
-    public var name:String = "";
-
-    public var notes:String = "";
-
-    public var startDate:Date = new Date;
-
-    public var endDate:Date = new Date;
-
-    public var completed:Boolean = false;
-
-    [BelongsTo]
-    public var user:User;
-
-    [HasMany(sort="name:descending")]
-    public var tasks:ModelsCollection;
-    
-    public function Project() {
-      super(LABEL);
-    }
-  }
-}
-{% endhighlight %}
-
 Chaining Rx.filter(Rx.sort()) is now actually functional.
 
 You can now get easier access to AuxAIRController via XRx class, which serves a similar purpose to Rx. E.g.
@@ -239,5 +201,12 @@ public function testFindAllWithIncludes():void {
 
 You can now send custom HTTP headers with Rx.http() and XMLHTTPServiceProvider/JSONHTTPServiceProvider. Just set
 Rx.customHTTPHeaders and off you go.
+
+You can now use [HasMany(sort="foo:descending,caseInscensitive,numeric")] annotations, along these lines
+ 
+{% highlight as3 %}
+    [HasMany(sort="name:descending")]
+    public var tasks:ModelsCollection;
+{% endhighlight %}
 
 And of course a bunch of bug fixes and other improvements.
