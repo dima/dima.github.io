@@ -11,19 +11,19 @@ h1. Overview
 
 Some of the key "themes" of this release are:
 
-  1. *Distributed AIR apps* (Better push/pull workflow, out of the box distributed configuration for Rails back-end, etc)
+    # *Distributed AIR apps* (Better push/pull workflow, out of the box distributed configuration for Rails back-end, etc)
   
-  2. *schema_to_yaml integration* (helps with migrating existing Rails projects over to RestfulX)
+    # *schema_to_yaml integration* (helps with migrating existing Rails projects over to RestfulX)
   
-  3. *More code generation options*
+    # *More code generation options*
 
 And of course bugfixing and a number of other features that we'll discuss further down.
 
 h2. Distributed AIR apps/Synchronization
 
-Distributed AIR apps and easier synchronization is one of the "key" themes in this release. 
+Easier synchronization is one of the "key" themes in this release.
 
-You can generate distribution ready apps, pretty much out of the box. Here's a few steps to get you going:
+For starters, you can generate distribution ready apps, pretty much out of the box. Here's a few steps to get you going:
 
 {% highlight bash %}
 $>rails foobar
@@ -36,7 +36,10 @@ $> rake rx:air:build
 $> rake rx:air:run
 {% endhighlight %}
 
-You can perform both push and pull operations against a remote service provider.
+Your Rails app will be configured to use UUIDs for all models and references, and the generated controllers will
+behave in a way that is more consistent with distributed RESTful behaviour (a-la CouchDB).
+
+Additionally, you can perform both push and pull operations against a remote service provider.
 
 {% highlight as3 %}
 Rx.changes.push(); // Pushes changes from a local service provider to remote
@@ -50,7 +53,7 @@ Rx.changes.push(Project, Task);
 Rx.changes.pull(Project);
 {% endhighlight %}
 
-Here's what a default distributed AIR app main application file looks like:
+Here's what a default distributed AIR app main application file looks like.
 
 {% highlight as3 %}
 <?xml version="1.0" encoding="utf-8"?>
@@ -165,24 +168,66 @@ Here's what a default distributed AIR app main application file looks like:
 </mx:WindowedApplication>
 {% endhighlight %}
 
+Explain some stuff here.
+
 h2. More code-generation options
 
 Many thanks to Robert Malko for implementing much of this!
 
-# You can now run and re-run *rx_yaml_scaffold* as many times as you like.
-# You can also specify specific models to generate e.g. 
+# You can now run and re-run *rx_yaml_scaffold* as many times as you like to refresh your generated code. No more conflicts with Rails helpers and migrations.
+
+# You can also specify specific models to generate or re-generate e.g. 
 {% highlight bash %}
 ./script/generate rx_yaml_scaffold model1 model2
 {% endhighlight %}
-where model1 and model2 are defined in the db/model.yml file.
+
 
 h2. More YAML configuration options for model.yml files
 
-You can now use attachment_field as well as has_many_through keywords in your model.yml files. 
+You can now use *attachment_field* as well as *has_many_through* keywords in your model.yml files. E.g.
+
+{% highlight yaml %}
+project:
+ - name: string
+ - notes: text
+ - start_date: date
+ - end_date: date
+ - completed: boolean
+ - belongs_to: [user]
+ - has_many: [tasks]
+
+location:
+ - name: string
+ - notes: text
+ - belongs_to: [user]
+ - has_many: [tasks]
+
+task:
+ - name: string
+ - notes: text
+ - start_time: datetime
+ - end_time: datetime
+ - completed: boolean
+ - next_action: boolean
+ - belongs_to: [project, location, user]
+
+note:
+ - content: text
+ - belongs_to: [user]
+
+user:
+ - login: string
+ - first_name: string
+ - last_name: string
+ - email: string
+ - has_many: [tasks, projects, locations]
+ - has_one: [note]
+ - attachment_field: [avatar]
+{% endhighlight %}
 
 h2. Miscellaneous improvements
 
-Chaining Rx.filter(Rx.sort()) is now actually functional.
+Chaining Rx.filter(Rx.sort()) now actually works.
 
 You can now get easier access to AuxAIRController via XRx class, which serves a similar purpose to Rx. E.g.
 
@@ -194,6 +239,7 @@ public function testFindAll():void {
 {% endhighlight %}
 
 You can now eager load nested relationships as well. Like so:
+
 {% highlight as3 %}
 public function testFindAllWithIncludes():void {
   XRx.air(onFindAllWithIncludes).findAll(Project, 
@@ -201,14 +247,13 @@ public function testFindAllWithIncludes():void {
 }
 {% endhighlight %}
 
-You can now send custom HTTP headers with Rx.http() and XMLHTTPServiceProvider/JSONHTTPServiceProvider. Just set
-Rx.customHTTPHeaders and off you go.
+You can now send custom HTTP headers with Rx.http() and XMLHTTPServiceProvider/JSONHTTPServiceProvider. 
+Just set Rx.customHTTPHeaders and off you go.
 
-You can now use [HasMany(sort="foo:descending,caseInscensitive,numeric")] annotations, along these lines
- 
+You can now use [HasMany(sort="foo:descending,caseInscensitive,numeric")] annotations in your RestfulX Flex models. It goes something along these lines:
 {% highlight as3 %}
-    [HasMany(sort="name:descending")]
-    public var tasks:ModelsCollection;
+[HasMany(sort="name:descending")]
+public var tasks:ModelsCollection;
 {% endhighlight %}
 
 And of course a bunch of bug fixes and other improvements.
