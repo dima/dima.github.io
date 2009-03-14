@@ -235,6 +235,8 @@ user:
  - attachment_field: [avatar]
 {% endhighlight %}
 
+This will get you a fully functional application with support for file uploads on the @user@ model out of the box.
+
 h2. Miscellaneous improvements
 
 Easier access to @AuxAIRController@ via @XRx@ class, which serves a similar purpose to @Rx@. E.g.
@@ -269,3 +271,5 @@ public var tasks:ModelsCollection;
 {% endhighlight %}
 
 And of course a bunch of bug fixes and other improvements.
+
+Thanks a lot to everyone who submitted patches for this release. Your contributions are very much appreciated!
