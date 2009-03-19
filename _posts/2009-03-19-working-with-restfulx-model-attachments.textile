@@ -18,7 +18,7 @@ h3. Creating Rails application
 
 The first thing we'll need to do is create our Rails application of course.
 
-{% highlight %}
+{% highlight bash %}
 $>rails rx_model_attachments
 {% endhighlight %}
 
