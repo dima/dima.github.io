@@ -129,11 +129,11 @@ contact:
 
 Pretty simple right? @contact@ is the name of our model and all the lines prefixed with @-@ denote attributes. Things like @first_name@ and @last_name@ name are simple properties, while @attachment_field@ is a special RestfulX property that will be used to generate appropriate configuration for uploading files. By default, it is based on @paperclip@ and will use attachment name of @avatar@ in your ActiveRecord model.
 
-The next thing we need to is generate the app. We can do by running @./script/generate rx_yaml_scaffold@
+The next thing we need to do is generate the app. We can do that by running @./script/generate rx_yaml_scaffold@
 
 h3. Generating Application
 
-Again, this will create a number of files including, the migration, ActiveRecord model, RxModel file and so on. Let's review the important additions.
+Again, this will create a number of files including, migration, ActiveRecord model, RxModel file and so on. Let's review the important additions.
 
 Here's what our migration looks like.
 
