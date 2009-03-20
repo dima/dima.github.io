@@ -22,7 +22,14 @@ The first thing we'll need to do is create our Rails application of course.
 $>rails rx_model_attachments
 {% endhighlight %}
 
-The next thing we need to do is add @restfulx@ and @paperclip@ gems to our application configuration.
+The next thing we need to do is add @restfulx@ and @paperclip@ gems to our application configuration. Make sure you install these gems if you haven't done so already.
+
+{% highlight bash %}
+$>sudo gem install paperclip
+$>sudo gem install restfulx
+{% endhighlight %}
+
+Let's edit @config/environment.rb@.
 
 {% highlight diff %}
 @@ -27,6 +27,8 @@ Rails::Initializer.run do |config|
@@ -39,7 +46,7 @@ Now we can run @./script/generate rx_config@ to set up the default RestfulX conf
 
 h3. RestfulX Configuration
 
-Running that command will create a few files. While we can skip most of it, there's a few generated files that we should quickly review.
+Running that command will create a few files. While we can skip most of them, there's a few generated files that we should  review before going forward.
 
 The main application file @RxModelAttachments.mxml@ will look like this by default.
 
@@ -116,7 +123,7 @@ This will hooks up various models, commands and other configuration options for 
 
 h3. Generating Contacts
 
-Now that we have a working set-up, it's time to add some functionality! We'll start by creating a model.yml file that describes our data model. This file is used to generate appropriate Flex and Rails files out of the box, so that you don't have to go and manually edit anything to get started. Here's what it looks like for this app.
+Now that we have a working set-up, it's time to add some functionality! We'll start by creating a model.yml file that describes our data model. This file is used to generate appropriate Flex and Rails models, controllers, etc, out of the box, so that you don't have to go and manually edit anything to get started. Here's what our model.yml file looks like for this app.
 
 {% highlight yaml %}
 contact:
@@ -127,13 +134,15 @@ contact:
  - attachment_field: [avatar]
 {% endhighlight %}
 
-Pretty simple right? @contact@ is the name of our model and all the lines prefixed with @-@ denote attributes. Things like @first_name@ and @last_name@ name are simple properties, while @attachment_field@ is a special RestfulX property that will be used to generate appropriate configuration for uploading files. By default, it is based on @paperclip@ and will use attachment name of @avatar@ in your ActiveRecord model.
+Pretty simple right? 
+
+@contact@ is the name of our model and all the lines prefixed with @-@ denote attributes. Things like @first_name@ and @last_name@ name are simple properties, while @attachment_field@ is a special RestfulX property that will be used to generate appropriate configuration for uploading files. By default, it is based on @paperclip@ and will use attachment name of @avatar@ in your ActiveRecord model.
 
 The next thing we need to do is generate the app. We can do that by running @./script/generate rx_yaml_scaffold@
 
 h3. Generating Application
 
-Again, this will create a number of files including, migration, ActiveRecord model, RxModel file and so on. Let's review the important additions.
+Again, this will create a number of files, including ActiveRecord migration, ActiveRecord model, RxModel and so on. Let's quickly review some of the generated code.
 
 Here's what our migration looks like.
 
@@ -161,7 +170,7 @@ class CreateContacts < ActiveRecord::Migration
 end
 {% endhighlight %}
 
-The generator has also added our generated Flex view component called @ContactBox@ to our main application file  @RxModelAttachments.mxml@
+The generator has also added our new Flex view component called @ContactBox@ to the main application file  @RxModelAttachments.mxml@
 
 {% highlight diff %}
 @@ -16,5 +16,6 @@
@@ -204,7 +213,7 @@ package rxmodelattachments.models {
 }
 {% endhighlight %}
 
-It pretty much reflects what we had in our model.yml file, but it's set up to display uploaded files via URL.
+It pretty much reflects what we had in our model.yml file, but it's set up to display uploaded files via the @attachmentUrl@ property.
 
 The generator has also added our newly generated RxModel to the list of models for this application in @ApplicationController.as@
 
@@ -232,9 +241,9 @@ And added a RESTful resource to @config/routes.rb@
    map.root :controller => "flex"
 {% endhighlight %}
 
-The next thing we are going to have a look at is the generated Flex view component @ContactBox.mxml@. 
+The next thing we are going to do is take a peak at the generated Flex view component @ContactBox.mxml@. 
 
-Here's a few relevant snippets from it.
+I've included the relevant AS3 snippet from it below.
 
 {% highlight as3 %}
     import org.restfulx.Rx;
@@ -318,9 +327,9 @@ Here's a few relevant snippets from it.
     }
 {% endhighlight %}
 
-As you can see this file is automatically set-up to do CRUD on our @Contact@ model and it can also perform file uploads for that model out of the box. It may not be the best looking Flex component but it's probably a faster way to get started.
+As you can see this file is automatically set-up to do CRUD on our @Contact@ model and it can also perform file uploads for that model out of the box. It may not be the best looking Flex component but it's certainly a fast way to get started.
 
-Lastly, let's review the generated ActiveRecord model @contact.rb@
+Lastly, let's review our generated ActiveRecord model @contact.rb@
 
 {% highlight ruby %}
 class Contact < ActiveRecord::Base
@@ -335,13 +344,15 @@ class Contact < ActiveRecord::Base
 end
 {% endhighlight %}
 
-It's been configured to use @paperclip@ with attachment name of @avatar@. @attachment_url@ method allows us to pass back to the Flex client the URL which was created for this attachment.
+It's been configured to use @paperclip@ with attachment name of @avatar@. @attachment_url@ method allows us to pass the URL back to Flex client.
 
-Let's run @rake db:refresh@, followed by @rake rx:flex:build@. That's it we should now have a functional Flex/Rails application that allows us to do CRUD on @Contact@ model and upload files with it.
+Let's run @rake db:refresh@, followed by @rake rx:flex:build@. 
+
+That's it! Try it out by starting the server by running @./script/server@ and navigating to @http://localhost:3000@. We should have a functional Flex/Rails application that allows us to do CRUD on @Contact@ model and upload files as well.
 
 h2. Adding Camera Handling and Snapshots
 
-Uploading files is cool, but Flex/Flash allow us to do more than that. If you've got a WebCam we can use it's output to take snapshots and upload that instead of actual files on the file system. This should save people time uploading their pictures. Now they can just take one instead of looking for the right image on the filesystem.
+Uploading files is cool, but Flex/Flash allow us to do more than that. If you've got a WebCam we can use its output to take snapshots and upload them instead of actual files on the file system. This should save people time uploading their pictures. Now they can just take a picture on the spot instead of looking for the right image on their hard-drive.
 
 h3. Adding Snapshots
 
@@ -471,7 +482,9 @@ File: @TakeSnapshot.mxml@
 
 Finally, let's modify our generated view component @ContactBox.mxml@ to be able to use our Snapshot component and upload binary data directly instead of going to the filesystem first. Here's what I've "changed":http://github.com/dima/rx_model_attachments/commit/42e39948f52ac08f44a4a636d2f502f54e9fb44c
 
-That's all there is to it. Run @rake rx:flex:build@ to re-compile our Flex application and then start the server by running @./script/server@. Then navigate to @http://localhost:3000@ and take some snapshots!
+That's all there is to it. 
+
+Run @rake rx:flex:build@ to re-compile our Flex application and then start the server by running @./script/server@. Then navigate to @http://localhost:3000@ and take some snapshots!
 
 h2. Get the code
 
