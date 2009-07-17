@@ -102,7 +102,7 @@ h2. Rails 2.3.x and accepts_nested_attributes_for
 
 Rails 2.3 introduced a cool new feature that allows you to recursively create model objects in one go. You can refer to http://ryandaigle.com/articles/2009/2/1/what-s-new-in-edge-rails-nested-attributes for more details on this.
 
-It's actually quite straight-forward to use this from your RestfulX-based Flex/AIR application. Here's what you need to do:
+It's actually quite straight-forward to use this from your RestfulX-based Flex/AIR application. Here's what you need to do.
 
 Let's create a simple Rails/RestfulX app. You can refer to http://wiki.github.com/dima/restfulx/restfulx-framework-and-rails-21 for details on how to get started with Rails and RestfulX.
 
@@ -146,17 +146,13 @@ private function createProjectRecursively():void {
 
 Note, the @recursive@ parameter to @create@ (also accepted by @update and destroy@).
 
-Hopefully are getting the drift by now. When you indicate that this model should be created recursively all non-null [HasOne] and [HasMany] relationships will
-be included by default.
+Hopefully are getting the drift by now. When you indicate that this model should be created recursively all non-null [HasOne] and [HasMany] relationships will be included by default.
 
-[BelongsTo] relationships are still serialized using relationship id. If you'd like to include a particular [BelongsTo] relationship in recursive model creation
-mark it with [Nested] annotation.
+[BelongsTo] relationships are still serialized using relationship id. If you'd like to include a particular [BelongsTo] relationship in recursive model creation mark it with [Nested] annotation.
 
-That's all there's to it. Hook up a button or some UI element to invoke this tester function and 
-double-check that your project and tasks got saved by Rails correctly.
+That's all there's to it. Hook up a button or some UI element to invoke this tester function and double-check that your project and tasks got saved by Rails correctly.
 
-If you created a new Rails+RestfulX application from scratch using 1.2.3 release of the framework then the following middleware will be defined for you in
-@config/initializers/restfulx.rb@
+If you created a new Rails+RestfulX application from scratch using 1.2.3 release of the framework then the following middleware will be defined for you in @config/initializers/restfulx.rb@
 
 {% highlight ruby %}
 # the following patches allow us to overwrite session key on file uploads from Flash, 
@@ -238,6 +234,7 @@ After you performed search and/or paging using this action. You can get access t
 {% highlight as3 %}
 trace(Rx.models.cached(Project).metadata['total_pages'])
 {% endhighlight %}
+
 
 h2. Bug-fixing
 
