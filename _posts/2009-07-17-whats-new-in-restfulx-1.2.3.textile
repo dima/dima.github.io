@@ -146,11 +146,11 @@ private function createProjectRecursively():void {
 
 Note, the @recursive@ parameter to @create@ (also accepted by @update and destroy@).
 
-Hopefully are getting the drift by now. When you indicate that this model should be created recursively all non-null [HasOne] and [HasMany] relationships will be included by default.
+Hopefully you are getting the drift by now. When you indicate that this model should be created recursively all non-null [HasOne] and [HasMany] relationships will be included by default.
 
 [BelongsTo] relationships are still serialized using relationship id. If you'd like to include a particular [BelongsTo] relationship in recursive model creation mark it with [Nested] annotation.
 
-That's all there's to it. Hook up a button or some UI element to invoke this tester function and double-check that your project and tasks got saved by Rails correctly.
+That's all there's to it. Hook up a button or some other UI element to invoke this tester function and double-check that your project and tasks got saved by Rails correctly.
 
 If you created a new Rails+RestfulX application from scratch using 1.2.3 release of the framework then the following middleware will be defined for you in @config/initializers/restfulx.rb@
 
