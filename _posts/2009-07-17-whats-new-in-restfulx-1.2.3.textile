@@ -21,7 +21,7 @@ Some of the key "themes" of this release are:
 
 h2. Server-Push with Juggernaut
 
-Juggernaut (http://juggernaut.rubyforge.org/) is a Ruby on Rails plugin that allows you to push content to the Flash/Flex client directly from the server using an open XML socket.
+Juggernaut (http://juggernaut.rubyforge.org/) is a Ruby on Rails plugin that allows you to push content to your Flash/Flex client directly from the server using an open XML socket.
 
 Here's a few steps to get you started with using Juggernaut and RestfulX together.
 
@@ -32,7 +32,7 @@ Then, let's create a stab Rails+RestfulX application.
 {% highlight bash %}
 $>rails foobar
 $>cd foobar
-$>vi config/environment.rb (add config.gem "restfulx" and config.gem "uuidtools")
+$>vi config/environment.rb (add config.gem "restfulx")
 $>./script/generate rx_config
 {% endhighlight %}
 
@@ -87,7 +87,7 @@ juggernaut -c config/juggernaut.yml
 You can then navigate the app at http://localhost:3000 and push 
 messages from the server or console. For example, do
 
-{% hightlight bash %}
+{% highlight bash %}
 ./script/console
 Juggernaut.send_to_all("hello from the server")
 {% endhighlight %}
