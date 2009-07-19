@@ -187,10 +187,7 @@ Many thanks to Robert Malko for implementing much of this!
 
 You can now run and re-run @rx_yaml_scaffold@ as many times as you like to refresh your generated code. No more conflicts with Rails helpers and migrations.
 
-You can also specify specific models to generate or re-generate e.g. 
-{% highlight bash %}
-script/generate rx_yaml_scaffold model1 model2
-{% endhighlight %}
+You can also specify specific models to generate or re-generate e.g. @script/generate rx_yaml_scaffold model1 model2@
 
 h2. More YAML configuration options for model.yml files
 
