@@ -238,6 +238,6 @@ trace(Rx.models.cached(Project).metadata['total_pages'])
 
 h2. Bug-fixing
 
-For a list of bugs fixed in this release refer to http://github.com/dima/restfulx_framework/issues/closed
+For a list of bugs fixed in this release refer to "bugs fixed":http://github.com/dima/restfulx_framework/issues/closed
 
 Thanks a lot to everyone who submitted patches for this release. Your contributions are very much appreciated!

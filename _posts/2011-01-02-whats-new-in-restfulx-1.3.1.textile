@@ -19,11 +19,11 @@ h1. Overview
 
 h2. SQLite dynamic schema updates
 
-You can now keep your SQLite database up-to-date with your RestfulX model changes. Simply set @Rx.airEnableDatabaseMigrations = true@ in
-your initialization function and RestfulX will add any new properties you add your model files as columns to your underlying SQLite database.
+You can now keep your SQLite database up-to-date with your RestfulX model changes. Simply set 
+@Rx.airEnableDatabaseMigrations = true@ in your initialization function and RestfulX will add any new properties you add your model files as columns to your underlying SQLite database.
 
 There are some caveats though. SQLite supports a very limited version of @ALTER TABLE@ so you can add new columns but not much else. See 
-http://www.sqlite.org/lang_altertable.html for more details. In reality this is good enough for incremental updates to your DB and if you do a major update of your app that requires stale columns to be removed and data moved around (columns renamed), you can do so in a custom upgrade procedure using @XRx.air().executeAnySQL@.
+"SQLite ALTER TABLE specification":http://www.sqlite.org/lang_altertable.html for more details. In reality this is good enough for incremental updates to your DB and if you do a major update of your app that requires stale columns to be removed and data moved around (columns renamed), you can do so in a custom upgrade procedure using @XRx.air().executeAnySQL@.
 
 h2. SQLite recursive deletes
 
@@ -35,6 +35,6 @@ After some benchmarking and optimization for the pure AMF serializer that comes 
 
 h2. Bug fixes
 
-For a list of bugs fixed in this release refer to http://github.com/dima/restfulx_framework/issues/closed
+For a list of bugs fixed in this release refer to "bugs fixed":http://github.com/dima/restfulx_framework/issues/closed
 
 Thanks a lot to everyone who submitted patches for this release. Your contributions are very much appreciated!
