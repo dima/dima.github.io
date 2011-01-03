@@ -183,6 +183,9 @@ ul.posts {
 }
 
   /* standard */
+  #post ul, #post ol {
+    margin-bottom: 1em;
+  }
   
   #post pre {
     border: 1px solid #ddd;
