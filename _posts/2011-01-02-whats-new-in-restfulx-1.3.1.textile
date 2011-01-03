@@ -32,6 +32,6 @@ After some benchmarking and optimization for the pure AMF serializer that comes 
 
 h2. <a name="bug-fixes">Bug fixes</a>
 
-For a list of bugs fixed in this release refer to "bugs fixed":http://github.com/dima/restfulx_framework/issues/closed
+For a list of bugs fixed in this release refer to "bugs fixed":http://github.com/dima/restfulx_framework/issues/closed.
 
 Thanks a lot to everyone who submitted patches for this release. Your contributions are very much appreciated!
