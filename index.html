@@ -7,15 +7,15 @@ title: Dima Berastau
   
   <h1>Projects</h1>
   <ul class="posts">
-    <li><a href="http://restfulx.github.com"><strong>RestfulX Framework</strong></a>: The RESTful way to develop Adobe Flex and AIR applications.</li>
-    <li><a href="http://github.com/dima/gitscribe"><strong>GitScribe</strong></a>: Create tutorials and articles with ease using Git and GitScribe.</li>
-    <li><a href="http://timerecall.com"><strong>TimeRecall</strong></a>: Agile time-tracking for everyone.</li>
+    <li><a href="http://restfulx.github.com"><strong>RestfulX Framework</strong></a> The RESTful way to develop Adobe Flex and AIR applications.</li>
+    <li><a href="http://github.com/dima/gitscribe"><strong>GitScribe</strong></a> Create tutorials and articles with ease using Git and GitScribe.</li>
+    <li><a href="http://timerecall.com"><strong>TimeRecall</strong></a> Agile time-tracking for everyone.</li>
   </ul>
   
   <h1>Posts</h1>
   <ul class="posts">
     {% for post in site.posts %}
-      <li class="post"><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+      <li class="post"><span>{{ post.date | date_to_string }}</span> <a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
   
