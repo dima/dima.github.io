@@ -1,1 +1,3 @@
-_site
+Rakefile
+_content/_site/*
+.DS_Store
