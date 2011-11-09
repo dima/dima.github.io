@@ -11,7 +11,6 @@
     {% include_js "/js/bootstrap-twipsy.js" %}
     {% include_js "/js/bootstrap-popover.js" %}
     {% include_js "/js/main.js" %}
-    {% include_js ""https://apis.google.com/js/plusone.js" %}
     <script type='text/javascript'>
       //<![CDATA[
         var _gaq = _gaq || [];
@@ -27,8 +26,18 @@
     </script>
   </head>
   <body>
-    <!-- #plusone -->
-    <!-- .g-plusone{:data => {:size => 'standard'}} -->
+    <script type='text/javascript'>
+      //<![CDATA[
+        (function() {
+        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        po.src = 'https://apis.google.com/js/plusone.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+        })();
+      //]]>
+    </script>
+    <div id='plusone'>
+      <div class='g-plusone' data-size='standard'></div>
+    </div>
     {{ content }}
   </body>
 </html>

@@ -55,6 +55,10 @@
 html, body {
   background: #333333 url("/images/linen.jpg") 0 0 no-repeat; }
 
+body #plusone {
+  position: fixed;
+  bottom: 7px;
+  left: 15px; }
 body div#container {
   background-color: #fff;
   -webkit-border-radius: 5px;

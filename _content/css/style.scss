@@ -224,6 +224,12 @@ html, body {
 }
 
 body {
+  #plusone {
+    position: fixed;
+    bottom: 7px;
+    left: 15px;
+  }
+  
   div#container {
     background-color: #fff;
     @include border-radius;
