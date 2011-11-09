@@ -2,8 +2,8 @@
 <html>
   <head>
     <title>Dima Berastau</title>
-    <meta content='riadrom is a design and development company in Vancouver specializing in web and mobile.' name='description' />
-    <meta content='web design, web development, mobile, training, ruby, rails, objective-c, javascript, vancouver, berlin' name='keywords' />
+    <meta content='dima berastau is a developer in Vancouver specializing in web and mobile applications.' name='description' />
+    <meta content='web design, web development, mobile, training, ruby, rails, objective-c, javascript, vancouver' name='keywords' />
     <link href='http://dima.github.com/favicon.ico' rel='icon' type='image/x-icon' />
     {% include_css "/css/bootstrap.css" %}
     {% include_css "/css/style.css" %}
@@ -12,11 +12,23 @@
     {% include_js "/js/bootstrap-popover.js" %}
     {% include_js "/js/main.js" %}
     {% include_js ""https://apis.google.com/js/plusone.js" %}
+    <script type='text/javascript'>
+      //<![CDATA[
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-26902827-1']);
+        _gaq.push(['_trackPageview']);
+        
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+      //]]>
+    </script>
   </head>
   <body>
-    <div id='plusone'>
-      <div class='g-plusone' data-size='standard'></div>
-    </div>
+    <!-- #plusone -->
+    <!-- .g-plusone{:data => {:size => 'standard'}} -->
     {{ content }}
   </body>
 </html>
