@@ -108,3 +108,7 @@ body #social-icons li a.github {
   background-position: 37px 0px; }
 body #social-icons li a.github:hover {
   background-position: 37px 36px; }
+body a.work {
+  float: right;
+  margin-top: -55px;
+  margin-right: 20px; }
