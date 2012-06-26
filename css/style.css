@@ -56,9 +56,9 @@ html, body {
   background: #292929 url("/images/pattern.png") 0 0 repeat; }
 
 body #plusone {
-  position: fixed;
-  bottom: 7px;
-  left: 15px; }
+  position: absolute;
+  bottom: 17px;
+  left: 20px; }
 body div#container {
   background-color: #fff;
   -webkit-border-radius: 5px;
