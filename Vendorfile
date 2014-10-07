@@ -1,7 +1,3 @@
-file 'source/javascripts/vendor/jquery.imagesloaded.js', 'https://raw.githubusercontent.com/desandro/imagesloaded/master/imagesloaded.pkgd.js'
-file 'source/javascripts/vendor/jquery.isotope.js', 'https://raw.githubusercontent.com/metafizzy/isotope/master/dist/isotope.pkgd.js'
-file 'source/javascripts/vendor/jquery.easing.js', 'https://raw.githubusercontent.com/gdsmith/jquery.easing/master/jquery.easing.1.3.js'
-file 'source/javascripts/vendor/jquery.smartresize.js', 'https://raw.githubusercontent.com/louisremi/jquery-smartresize/master/jquery.debouncedresize.js'
 file 'source/javascripts/vendor/jquery.scrollto.js', 'https://raw.githubusercontent.com/flesler/jquery.scrollTo/master/jquery.scrollTo.js'
 file 'source/javascripts/vendor/jquery.unveil.js', 'https://raw.github.com/luis-almeida/unveil/master/jquery.unveil.js'
 file 'source/javascripts/vendor/fastclick.js', 'https://raw.github.com/ftlabs/fastclick/master/lib/fastclick.js'

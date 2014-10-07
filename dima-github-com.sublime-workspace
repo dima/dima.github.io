@@ -4,6 +4,34 @@
 		"selected_items":
 		[
 			[
+				"margin",
+				"margin-right"
+			],
+			[
+				"margin-",
+				"margin-bottom"
+			],
+			[
+				"max-",
+				"max-width"
+			],
+			[
+				"font-",
+				"font-size"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
 				"scroll",
 				"scrollTo"
 			],
@@ -14,10 +42,6 @@
 			[
 				"padding",
 				"padding-bottom"
-			],
-			[
-				"margin-",
-				"margin-bottom"
 			],
 			[
 				"te",
@@ -132,10 +156,6 @@
 				"background-color"
 			],
 			[
-				"margin",
-				"margin-bottom"
-			],
-			[
 				"auto",
 				"auto_pay_notification_cooldown"
 			],
@@ -192,10 +212,6 @@
 				"padding-top"
 			],
 			[
-				"text",
-				"text-align"
-			],
-			[
 				"min",
 				"min-height"
 			],
@@ -242,10 +258,6 @@
 			[
 				"merge_",
 				"merge_target"
-			],
-			[
-				"font-",
-				"font-weight"
 			],
 			[
 				"un",
@@ -502,36 +514,48 @@
 			[
 				"indivi",
 				"individual_discounts"
-			],
-			[
-				"item_",
-				"item_tax"
-			],
-			[
-				"set",
-				"setOrderTotals"
-			],
-			[
-				"copy",
-				"copyCheckOrderSummary"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "source/layouts/layout.html.haml",
+			"file": "Vendorfile",
 			"settings":
 			{
-				"buffer_size": 1980,
+				"buffer_size": 371,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "Gemfile",
+			"file": "source/index.html.haml",
 			"settings":
 			{
-				"buffer_size": 218,
+				"buffer_size": 6429,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "source/stylesheets/application.css.scss",
+			"settings":
+			{
+				"buffer_size": 5151,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "source/javascripts/application.js.coffee",
+			"settings":
+			{
+				"buffer_size": 706,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "source/layouts/layout.html.haml",
+			"settings":
+			{
+				"buffer_size": 2350,
 				"line_ending": "Unix"
 			}
 		}
@@ -617,7 +641,17 @@
 	"file_history":
 	[
 		"/Users/Dima/Projects/dima.github.com/config.rb",
+		"/Users/Dima/Projects/dima.github.com/source/index.html.haml",
+		"/Users/Dima/Projects/dima.github.com/source/stylesheets/application.css.scss",
+		"/Users/Dima/Projects/dima.github.com/source/images/default.jpg",
+		"/Users/Dima/Projects/dima.github.com/source/layouts/layout.html.haml",
+		"/Users/Dima/Projects/dima.github.com/Vendorfile",
+		"/Users/Dima/Projects/dima.github.com/source/javascripts/application.js.coffee",
+		"/Users/Dima/Projects/dima.github.com/source/javascripts/ref.js",
 		"/Users/Dima/Projects/dima.github.com/Gemfile",
+		"/Users/Dima/Projects/dima.github.com/source/javascripts/lib/utils.js.coffee",
+		"/Users/Dima/Projects/dima.github.com/source/stylesheets/ref.css",
+		"/Users/Dima/Projects/dima.github.com/source/stylesheets/vendor/all.css",
 		"/Users/Dima/Projects/dbimaging/source/stylesheets/application.css.scss",
 		"/Users/Dima/Projects/dbimaging/Gemfile",
 		"/Users/Dima/Projects/dbimaging/source/layouts/layout.html.haml",
@@ -733,17 +767,7 @@
 		"/Users/Dima/Projects/karmasoft2/spec/factories/member_shopping_carts.rb",
 		"/Users/Dima/Projects/karmasoft2/app/models/order.rb",
 		"/Users/Dima/Projects/karmasoft2/spec/controllers/student_summaries_controller_spec.rb",
-		"/Users/Dima/Projects/karmasoft2/spec/controllers/studios_controller_spec.rb",
-		"/Users/Dima/Projects/karmasoft2/app/controllers/studios_controller.rb",
-		"/Users/Dima/Projects/karmasoft2/config/locales/en.yml",
-		"/Users/Dima/Projects/karmasoft2/db/migrate/20140906224416_add_email_notification_for_students.rb",
-		"/Users/Dima/Projects/karmasoft2/app/views/studios/notifications.html.haml",
-		"/Users/Dima/Projects/karmasoft2/app/assets/stylesheets/application/dashboard.scss",
-		"/Users/Dima/Projects/karmasoft2/app/assets/javascripts/application/dashboard.js.coffee",
-		"/Users/Dima/Projects/karmasoft2/app/views/activities/sales.js.coffee",
-		"/Users/Dima/Projects/karmasoft2/app/assets/javascripts/application/products.js.coffee",
-		"/Users/Dima/Projects/karmasoft2/app/controllers/stats_controller.rb",
-		"/Users/Dima/Projects/karmasoft2/app/views/stats/daily.html.haml"
+		"/Users/Dima/Projects/karmasoft2/spec/controllers/studios_controller_spec.rb"
 	],
 	"find":
 	{
@@ -796,6 +820,11 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			".timeline-title",
+			"timeline-section",
+			"lightbulb",
+			"\"",
+			"relative",
 			"\"",
 			"'",
 			"close",
@@ -918,12 +947,7 @@
 			"endDate",
 			"startDate",
 			"single-transaction",
-			"highcharts.com",
-			"has_student_plan?",
-			"process",
-			"find_and_assign_first_valid_student_plan",
-			"restore",
-			"rocess"
+			"highcharts.com"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1045,29 +1069,29 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "source/layouts/layout.html.haml",
+					"file": "Vendorfile",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1980,
+						"buffer_size": 371,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								687,
-								687
+								371,
+								371
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Rails/Ruby Haml.tmLanguage"
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1077,24 +1101,105 @@
 				},
 				{
 					"buffer": 1,
-					"file": "Gemfile",
+					"file": "source/index.html.haml",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 218,
+						"buffer_size": 6429,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								218,
-								218
+								2395,
+								2395
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+							"syntax": "Packages/Rails/Ruby Haml.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 252.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "source/stylesheets/application.css.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5151,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3523,
+								3523
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 584.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "source/javascripts/application.js.coffee",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 706,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								621,
+								621
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Better CoffeeScript/CoffeeScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "source/layouts/layout.html.haml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2350,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1943,
+								1943
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/Ruby Haml.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1152,8 +1257,40 @@
 		"selected_items":
 		[
 			[
+				"la",
+				"source/layouts/layout.html.haml"
+			],
+			[
+				"app",
+				"source/javascripts/application.js.coffee"
+			],
+			[
+				"conf",
+				"config.rb"
+			],
+			[
+				"index",
+				"source/index.html.haml"
+			],
+			[
+				"ven",
+				"Vendorfile"
+			],
+			[
+				"ref.",
+				"source/javascripts/ref.js"
+			],
+			[
 				"gem",
 				"Gemfile"
+			],
+			[
+				"vend",
+				"Vendorfile"
+			],
+			[
+				"con",
+				"config.rb"
 			],
 			[
 				"lay",
@@ -1164,32 +1301,12 @@
 				"Gemfile"
 			],
 			[
-				"app",
-				"source/stylesheets/application.css.scss"
-			],
-			[
-				"con",
-				"config.rb"
-			],
-			[
-				"conf",
-				"config.rb"
-			],
-			[
 				"applic",
 				"source/stylesheets/application.css.scss"
 			],
 			[
-				"index",
-				"source/index.html.haml"
-			],
-			[
 				"uti",
 				"source/javascripts/lib/utils.js.coffee"
-			],
-			[
-				"ven",
-				"Vendorfile"
 			],
 			[
 				"appl",
@@ -1214,10 +1331,6 @@
 			[
 				"ap",
 				"source/stylesheets/application.css.scss"
-			],
-			[
-				"la",
-				"source/layouts/layout.html.haml"
 			],
 			[
 				"button",
@@ -1654,14 +1767,6 @@
 			[
 				"online_bookings_con",
 				"spec/controllers/member/online_bookings_controller_spec.rb"
-			],
-			[
-				"schedu",
-				"features/schedule.feature"
-			],
-			[
-				"simpl",
-				"config/locales/simple_form.en.yml"
 			]
 		],
 		"width": 0.0
