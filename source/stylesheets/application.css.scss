@@ -191,6 +191,9 @@ a {
 
   p {
     margin-top: 0;
+    &.last {
+      margin-bottom: 0;
+    }
   }
 
   .text-muted {
@@ -269,51 +272,6 @@ a {
     img {
       height: 80px;
       width: 80px;
-    }
-  }
-}
-
-/*
- * STYLE 2
- */
-
-.timeline.style2:before {
-  top: 0;
-  bottom: 0;
-  position: absolute;
-  content: " ";
-  width: 0px;
-}
-
-ul.timeline.style2 {
-  &:before {
-    left: 40px;
-  }
-  > li > {
-    .timeline-panel {
-      width: calc(100% - 80px);
-      width: -moz-calc(100% - 80px);
-      width: -webkit-calc(100% - 80px);
-    }
-    .timeline-badge {
-      left: 15px;
-      margin-left: 0;
-      top: 16px;
-    }
-    .timeline-panel {
-      float: right;
-      &:before {
-        border-left-width: 0;
-        border-right-width: 15px;
-        left: -15px;
-        right: auto;
-      }
-      &:after {
-        border-left-width: 0;
-        border-right-width: 14px;
-        left: -14px;
-        right: auto;
-      }
     }
   }
 }
