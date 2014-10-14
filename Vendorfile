@@ -1,3 +1,2 @@
 file 'source/javascripts/vendor/jquery.scrollto.js', 'https://raw.githubusercontent.com/flesler/jquery.scrollTo/master/jquery.scrollTo.js'
-file 'source/javascripts/vendor/jquery.unveil.js', 'https://raw.github.com/luis-almeida/unveil/master/jquery.unveil.js'
 file 'source/javascripts/vendor/fastclick.js', 'https://raw.github.com/ftlabs/fastclick/master/lib/fastclick.js'

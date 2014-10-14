@@ -520,10 +520,10 @@
 	"buffers":
 	[
 		{
-			"file": "Vendorfile",
+			"file": "source/layouts/layout.html.haml",
 			"settings":
 			{
-				"buffer_size": 371,
+				"buffer_size": 2387,
 				"line_ending": "Unix"
 			}
 		},
@@ -531,31 +531,7 @@
 			"file": "source/index.html.haml",
 			"settings":
 			{
-				"buffer_size": 6429,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "source/stylesheets/application.css.scss",
-			"settings":
-			{
-				"buffer_size": 5151,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "source/javascripts/application.js.coffee",
-			"settings":
-			{
-				"buffer_size": 706,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "source/layouts/layout.html.haml",
-			"settings":
-			{
-				"buffer_size": 2350,
+				"buffer_size": 7646,
 				"line_ending": "Unix"
 			}
 		}
@@ -640,13 +616,13 @@
 	},
 	"file_history":
 	[
-		"/Users/Dima/Projects/dima.github.com/config.rb",
-		"/Users/Dima/Projects/dima.github.com/source/index.html.haml",
-		"/Users/Dima/Projects/dima.github.com/source/stylesheets/application.css.scss",
-		"/Users/Dima/Projects/dima.github.com/source/images/default.jpg",
-		"/Users/Dima/Projects/dima.github.com/source/layouts/layout.html.haml",
 		"/Users/Dima/Projects/dima.github.com/Vendorfile",
 		"/Users/Dima/Projects/dima.github.com/source/javascripts/application.js.coffee",
+		"/Users/Dima/Projects/dima.github.com/source/index.html.haml",
+		"/Users/Dima/Projects/dima.github.com/source/stylesheets/application.css.scss",
+		"/Users/Dima/Projects/dima.github.com/config.rb",
+		"/Users/Dima/Projects/dima.github.com/source/images/default.jpg",
+		"/Users/Dima/Projects/dima.github.com/source/layouts/layout.html.haml",
 		"/Users/Dima/Projects/dima.github.com/source/javascripts/ref.js",
 		"/Users/Dima/Projects/dima.github.com/Gemfile",
 		"/Users/Dima/Projects/dima.github.com/source/javascripts/lib/utils.js.coffee",
@@ -820,6 +796,7 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"default",
 			".timeline-title",
 			"timeline-section",
 			"lightbulb",
@@ -946,8 +923,7 @@
 			"nestedSum",
 			"endDate",
 			"startDate",
-			"single-transaction",
-			"highcharts.com"
+			"single-transaction"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1074,24 +1050,24 @@
 			[
 				{
 					"buffer": 0,
-					"file": "Vendorfile",
+					"file": "source/layouts/layout.html.haml",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 371,
+						"buffer_size": 2387,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								371,
-								371
+								472,
+								472
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/Rails/Ruby Haml.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1105,15 +1081,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6429,
+						"buffer_size": 7646,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2395,
-								2395
+								2956,
+								2956
 							]
 						],
 						"settings":
@@ -1121,88 +1097,7 @@
 							"syntax": "Packages/Rails/Ruby Haml.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 252.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "source/stylesheets/application.css.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5151,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3523,
-								3523
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/SCSS/SCSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 584.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "source/javascripts/application.js.coffee",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 706,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								621,
-								621
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Better CoffeeScript/CoffeeScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "source/layouts/layout.html.haml",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2350,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1943,
-								1943
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/Ruby Haml.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1153.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1257,12 +1152,20 @@
 		"selected_items":
 		[
 			[
-				"la",
-				"source/layouts/layout.html.haml"
+				"ven",
+				"Vendorfile"
 			],
 			[
 				"app",
-				"source/javascripts/application.js.coffee"
+				"source/stylesheets/application.css.scss"
+			],
+			[
+				"inde",
+				"source/index.html.haml"
+			],
+			[
+				"la",
+				"source/layouts/layout.html.haml"
 			],
 			[
 				"conf",
@@ -1271,10 +1174,6 @@
 			[
 				"index",
 				"source/index.html.haml"
-			],
-			[
-				"ven",
-				"Vendorfile"
 			],
 			[
 				"ref.",
@@ -1315,10 +1214,6 @@
 			[
 				"appli",
 				"source/stylesheets/application.css.scss"
-			],
-			[
-				"inde",
-				"source/index.html.haml"
 			],
 			[
 				"util",
@@ -1778,7 +1673,7 @@
 		[
 			[
 				"",
-				"~/Projects/dbimaging/dbimaging.sublime-project"
+				"~/Projects/karmasoft2/karmasoft2.sublime-project"
 			]
 		],
 		"width": 380.0

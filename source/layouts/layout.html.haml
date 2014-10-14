@@ -8,7 +8,7 @@
 %html{lang: 'en', class: 'no-js'}
   /<![endif]
   %head
-    %title #{data.page.title || "Dima Berastau"}
+    %title #{data.page.title || "Dima Berastau - Application Design and Development"}
     %meta(http-equiv="content-type" content="text/html" charset="utf-8")
     %meta(http-equiv="x-ua-compatible" content="ie=edge,chrome=1")
     %meta(name="description" content="Dima Berastau is a developer in Whistler, BC, Canada specializing in web and mobile applications.")
@@ -25,14 +25,12 @@
     -# Stylesheets
     = stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans'
     = stylesheet_link_tag '//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'
-    = stylesheet_link_tag '//fotorama.s3.amazonaws.com/4.6.2/fotorama.css'
     = stylesheet_link_tag 'application'
   %body{class: current_page.data.body_class || 'page'}
     = yield
     -# Javascripts
     = javascript_include_tag '//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js'
     = javascript_include_tag '//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js'
-    = javascript_include_tag '//fotorama.s3.amazonaws.com/4.6.2/fotorama.js'
     = javascript_include_tag 'application'
 
     - if build?
