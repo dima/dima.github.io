@@ -16,45 +16,22 @@ a {
   text-decoration: none;
 }
 
+a.button, a.close {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
 #content {
   margin: 0 auto;
   max-width: 1024px;
   padding: 15px;
 }
 
-.modal {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  opacity: 0;
-  background: rgba(0, 0, 0, 0.8);
-  z-index: 99998;
-  opacity:0;
-  -webkit-transition: opacity 400ms ease-in;
-  -moz-transition: opacity 400ms ease-in;
-  transition: opacity 400ms ease-in;
-  pointer-events: none;
-
-  &.visible {
-    opacity: 1;
-    pointer-events: auto;
-  }
-
-  .close {
-    z-index: 99999;
-    color: #FFFFFF;
-    position: absolute;
-    right: -3px;
-    text-align: center;
-    top: 25px;
-    height: 40px;
-    width: 40px;
-    line-height: 50px;
-    text-decoration: none;
-    cursor: pointer;
-  }
+#contact {
+  width: 45px;
+  text-align: center;
+  padding-top: 8px;
+  line-height: 21px;
+  margin-bottom: 15px;
 }
 
 .profile {
