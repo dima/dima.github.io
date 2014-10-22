@@ -4,12 +4,16 @@
 		"selected_items":
 		[
 			[
-				"text",
-				"text-decoration"
+				"margin",
+				"margin-bottom"
 			],
 			[
-				"margin",
-				"margin-right"
+				"impo",
+				"important"
+			],
+			[
+				"text",
+				"text-decoration"
 			],
 			[
 				"margin-",
@@ -510,47 +514,11 @@
 			[
 				"cost",
 				"cost_bucket"
-			],
-			[
-				"indivi",
-				"individual_discounts"
 			]
 		]
 	},
 	"buffers":
 	[
-		{
-			"file": "source/layouts/layout.html.haml",
-			"settings":
-			{
-				"buffer_size": 2235,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "source/index.html.haml",
-			"settings":
-			{
-				"buffer_size": 6079,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "source/stylesheets/lib/common.css.scss",
-			"settings":
-			{
-				"buffer_size": 1959,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "source/javascripts/application.js.coffee",
-			"settings":
-			{
-				"buffer_size": 171,
-				"line_ending": "Unix"
-			}
-		},
 		{
 			"file": "Vendorfile",
 			"settings":
@@ -560,10 +528,10 @@
 			}
 		},
 		{
-			"file": "source/stylesheets/application.css.scss",
+			"file": "source/layouts/layout.html.haml",
 			"settings":
 			{
-				"buffer_size": 4740,
+				"buffer_size": 2235,
 				"line_ending": "Unix"
 			}
 		}
@@ -649,12 +617,13 @@
 	"file_history":
 	[
 		"/Users/Dima/Projects/dima.github.com/source/stylesheets/application.css.scss",
-		"/Users/Dima/Projects/dima.github.com/Vendorfile",
 		"/Users/Dima/Projects/dima.github.com/source/javascripts/application.js.coffee",
+		"/Users/Dima/Projects/dima.github.com/source/layouts/layout.html.haml",
 		"/Users/Dima/Projects/dima.github.com/source/index.html.haml",
+		"/Users/Dima/Projects/dima.github.com/source/stylesheets/lib/common.css.scss",
+		"/Users/Dima/Projects/dima.github.com/Vendorfile",
 		"/Users/Dima/Projects/dima.github.com/config.rb",
 		"/Users/Dima/Projects/dima.github.com/source/images/default.jpg",
-		"/Users/Dima/Projects/dima.github.com/source/layouts/layout.html.haml",
 		"/Users/Dima/Projects/dima.github.com/source/javascripts/ref.js",
 		"/Users/Dima/Projects/dima.github.com/Gemfile",
 		"/Users/Dima/Projects/dima.github.com/source/javascripts/lib/utils.js.coffee",
@@ -774,8 +743,7 @@
 		"/Users/Dima/Projects/karmasoft2/lib/tasks/populate.rake",
 		"/Users/Dima/Projects/karmasoft2/spec/factories/member_shopping_carts.rb",
 		"/Users/Dima/Projects/karmasoft2/app/models/order.rb",
-		"/Users/Dima/Projects/karmasoft2/spec/controllers/student_summaries_controller_spec.rb",
-		"/Users/Dima/Projects/karmasoft2/spec/controllers/studios_controller_spec.rb"
+		"/Users/Dima/Projects/karmasoft2/spec/controllers/student_summaries_controller_spec.rb"
 	],
 	"find":
 	{
@@ -1077,119 +1045,11 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "source/layouts/layout.html.haml",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2235,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								702,
-								702
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/Ruby Haml.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "source/index.html.haml",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 6079,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2479,
-								2479
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/Ruby Haml.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "source/stylesheets/lib/common.css.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1959,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								39,
-								39
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/SCSS/SCSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "source/javascripts/application.js.coffee",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 171,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								86,
-								86
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Better CoffeeScript/CoffeeScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
 					"file": "Vendorfile",
 					"semi_transient": false,
 					"settings":
@@ -1201,8 +1061,8 @@
 						"selection":
 						[
 							[
-								139,
-								139
+								251,
+								251
 							]
 						],
 						"settings":
@@ -1216,25 +1076,25 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "source/stylesheets/application.css.scss",
+					"buffer": 1,
+					"file": "source/layouts/layout.html.haml",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4740,
+						"buffer_size": 2235,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								260,
-								260
+								438,
+								438
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+							"syntax": "Packages/Rails/Ruby Haml.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1292,8 +1152,16 @@
 		"selected_items":
 		[
 			[
+				"la",
+				"source/layouts/layout.html.haml"
+			],
+			[
 				"app",
 				"source/stylesheets/application.css.scss"
+			],
+			[
+				"inde",
+				"source/index.html.haml"
 			],
 			[
 				"lay",
@@ -1302,14 +1170,6 @@
 			[
 				"ven",
 				"Vendorfile"
-			],
-			[
-				"inde",
-				"source/index.html.haml"
-			],
-			[
-				"la",
-				"source/layouts/layout.html.haml"
 			],
 			[
 				"conf",
@@ -1813,7 +1673,7 @@
 		[
 			[
 				"",
-				"~/Projects/dbimaging/dbimaging.sublime-project"
+				"~/Projects/karmasoft2/karmasoft2.sublime-project"
 			]
 		],
 		"width": 380.0
