@@ -1152,6 +1152,10 @@
 		"selected_items":
 		[
 			[
+				"applic",
+				"source/stylesheets/application.css.scss"
+			],
+			[
 				"la",
 				"source/layouts/layout.html.haml"
 			],
@@ -1198,10 +1202,6 @@
 			[
 				"ge",
 				"Gemfile"
-			],
-			[
-				"applic",
-				"source/stylesheets/application.css.scss"
 			],
 			[
 				"uti",
