@@ -534,6 +534,22 @@
 				"buffer_size": 2235,
 				"line_ending": "Unix"
 			}
+		},
+		{
+			"file": "source/stylesheets/application.css.scss",
+			"settings":
+			{
+				"buffer_size": 4682,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "source/index.html.haml",
+			"settings":
+			{
+				"buffer_size": 5950,
+				"line_ending": "Unix"
+			}
 		}
 	],
 	"build_system": "",
@@ -796,6 +812,9 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			".profile",
+			"profile-small",
+			"profile.png",
 			"default",
 			".timeline-title",
 			"timeline-section",
@@ -920,10 +939,7 @@
 			"puts",
 			"karmaStartsOn",
 			"extractDrillDowns",
-			"nestedSum",
-			"endDate",
-			"startDate",
-			"single-transaction"
+			"nestedSum"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1045,7 +1061,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -1090,6 +1106,60 @@
 							[
 								438,
 								438
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/Ruby Haml.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "source/stylesheets/application.css.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4682,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								497,
+								497
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 270.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "source/index.html.haml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5950,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								35,
+								35
 							]
 						],
 						"settings":
