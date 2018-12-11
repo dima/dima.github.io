@@ -47,10 +47,8 @@ activate :automatic_image_sizes
 #   end
 # end
 
-activate :livereload
-
 activate :deploy do |deploy|
-  deploy.method = :git
+  deploy.deploy_method = :git
   # Optional Settings
   # deploy.remote   = 'custom-remote' # remote name or git url, default: origin
   deploy.branch   = 'master' # default: gh-pages

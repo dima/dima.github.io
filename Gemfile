@@ -5,7 +5,7 @@ source 'http://rubygems.org'
 gem 'middleman'
 gem 'middleman-livereload'
 gem 'middleman-minify-html'
-gem 'middleman-deploy'
+gem 'middleman-deploy', '~> 2.0.0.pre.alpha'
 
 gem 'bourbon'
 gem 'neat'
