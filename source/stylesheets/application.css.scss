@@ -84,7 +84,7 @@ a.button, a.close {
         width: 100%;
         border: 1px solid #ddd;
         border-radius: 2px;
-        padding: 0 15px 15px 15px;
+        padding: 0 15px;
         position: relative;
         float: left;
         background-color: white;
@@ -131,19 +131,16 @@ a.button, a.close {
         left: 50%;
         margin-left: -25px;
         background-color: #ddd;
-        z-index: 100;
+        border: none;
         border-top-right-radius: 50%;
         border-top-left-radius: 50%;
         border-bottom-right-radius: 50%;
         border-bottom-left-radius: 50%;
 
-        &.work {
-          // background-color: #2F3238 !important;
-        }
-
         &.back-to-top {
+          text-decoration: none !important;
           cursor: pointer;
-          line-height: 45px;
+          // line-height: 45px;
         }
       }
     }

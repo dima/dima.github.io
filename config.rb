@@ -47,6 +47,8 @@ activate :automatic_image_sizes
 #   end
 # end
 
+activate :sprockets
+
 activate :deploy do |deploy|
   deploy.deploy_method = :git
   # Optional Settings
