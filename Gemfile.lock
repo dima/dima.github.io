@@ -130,6 +130,7 @@ GEM
 
 PLATFORMS
   ruby
+  x86_64-darwin-20
 
 DEPENDENCIES
   bourbon
@@ -143,4 +144,4 @@ DEPENDENCIES
   vendorer
 
 BUNDLED WITH
-   1.17.1
+   1.17.2
