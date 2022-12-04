@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dima Berastau - Application Design and Development</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
+    <link href="./index.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container mx-auto px-4 pb-10 max-w-4xl text-gray-800">
+      <section id="header">
+        <img src="./profile.jpg" width="100px" height="100px" class="mx-auto mt-10 rounded-full border-4 border-solid border-slate-100" />
+        <div class="h-4 w-6 flex items-center justify-center mx-auto">
+          <div class="h-full w-1 bg-slate-100 pointer-events-none"></div>
+        </div>
+        <div class="bg-slate-100 p-4 rounded-lg tracking-tight">
+          <p class="mb-4">
+            Hi, my name is <b>Dima Berastau</b> and I am full-stack web and mobile application developer currently based in <b>Whistler, BC, Canada</b>. I've been involved in all
+            aspects of sotware development for over 18 years. While I've started my career with big businesses such as SAP and RIM I've quickly gravitated towards start-ups where
+            my ability to adapt and take on whatever technical challenges laid ahead could make a real difference. Currently my focus is on
+            <b>React/ReactNative Applications, Go and Python</b> but my experience spans a wide range of technologies, languagues and platforms. My <i>forté</i> is taking a concept
+            from idea to a fully working web/mobile product, sometimes with little to no external help.
+          </p>
+          <p class="mb-4">
+            In some cases, I've been able to get version 1.0 of a product to market by myself and then build an agile team to move the product forward in an attempt to gain
+            customers and market share. In other cases, I've had to put months and months of work into a project only to realise that the concept doesn't have a product/market fit
+            and would require a fundamental concept shift to work, if at all. In all cases, the market teaches you to pay attention to what you are doing. You just have to be ready
+            to listen.
+          </p>
+          <p class="mb-4">
+            As a result, my programming has evolved over time from <b>cowboy style</b> - <i>let's try to build this or let's try to build that</i> - to what I like to call
+            <b>samurai style</b> - <i>take 1 shot and make it count</i>. Start-ups are not all about success and fun. Not most of them anyway, but you do learn a lot of other
+            things along the way. One thing I've learned is that my motivation to develop and deliver beautiful software is pure and I am sure I'll be doing this for a long time
+            regardless of successes or failures that may come along the way.
+          </p>
+          <p class="mb-4">
+            Get in touch if you think that I can help. While I am very selective about the projects I spend my time on now I am always open to giving and receiving feedback.
+          </p>
+          <p>When I am not working on software I like to bike, climb, ski and take photos occasionally.</p>
+          <p class="mt-2">
+            <a
+              href="mailto:dima.berastau@gmail.com"
+              class="text-white bg-blue-500 hover:bg-blue-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center mr-2"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+                />
+              </svg>
+            </a>
+          </p>
+        </div>
+      </section>
+      <section id="content" class="flex flex-col grid-cols-9 mx-auto md:grid">
+        <!-- left section -->
+        <div class="flex flex-row-reverse justify-end pl-4 md:contents">
+          <!-- panel with text -->
+          <div class="bg-slate-100 relative flex-grow col-start-1 col-end-5 p-4 my-4 rounded-lg">
+            <div class="absolute right-0 top-[15px] transform translate-x-1/2 translate-y-1/2 rotate-45 w-5 h-5 bg-slate-100 invisible md:visible"></div>
+            <div class="w-5 h-5 bg-slate-100 absolute left-[-20px] top-[15px] transform translate-x-1/2 translate-y-1/2 rotate-45 visible md:invisible"></div>
+            <h2 class="font-semibold text-lg">Founder, SortinoX</h2>
+            <div class="flex flex-row text-sm font-light mb-2">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="w-5 h-5 mt-[-1px] ml-[-2px]">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5"
+                />
+              </svg>
+              <span class="ml-1">Oct 2022 - Current</span>
+            </div>
+            <p class="tracking-tight">
+              <a href="https://www.sortinox.com" target="_blank" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">SortinoX</a> is a fresh take on old problem.
+              <i>How do you make better investment decisions?</i> We don't pretend to make the decisions for you, what we want to give you tools to make your own decision making
+              process easier and more enjoyable.
+            </p>
+          </div>
+          <!-- line with circle -->
+          <div class="col-start-5 col-end-6 md:mx-auto relative mr-8">
+            <div class="h-full w-6 flex items-center justify-center">
+              <div class="h-full w-1 bg-slate-100 pointer-events-none"></div>
+            </div>
+            <div class="w-10 h-10 absolute top-[32px] -ml-2 rounded-full bg-slate-100 p-2">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0M12 12.75h.008v.008H12v-.008z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <!-- right section -->
+        <div class="flex pl-4 md:contents">
+          <!-- line with circle -->
+          <div class="col-start-5 col-end-6 md:mx-auto relative mr-8">
+            <div class="h-full w-6 flex items-center justify-center">
+              <div class="h-full w-1 bg-slate-100 pointer-events-none"></div>
+            </div>
+            <div class="w-10 h-10 absolute top-[32px] -ml-2 rounded-full bg-slate-100 p-2">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0M12 12.75h.008v.008H12v-.008z"
+                />
+              </svg>
+            </div>
+          </div>
+          <!-- panel with text -->
+          <div class="bg-slate-100 relative flex-grow col-start-6 col-end-10 p-4 my-4 rounded-lg">
+            <div class="absolute left-[-20px] top-[15px] transform translate-x-1/2 translate-y-1/2 rotate-45 w-5 h-5 bg-slate-100 invisible md:visible"></div>
+            <div class="w-5 h-5 bg-slate-100 absolute left-[-20px] top-[15px] transform translate-x-1/2 translate-y-1/2 rotate-45 visible md:invisible"></div>
+            <h2 class="font-semibold text-lg">CTO, Karmasoft</h2>
+            <div class="flex flex-row text-sm font-light mb-2">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="w-5 h-5 mt-[-1px] ml-[-2px]">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5"
+                />
+              </svg>
+              <span class="ml-1">Oct 2012 - Current</span>
+            </div>
+            <p class="tracking-tight">
+              <a href="https://www.karmasoft.io" target="_blank" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Karmasoft</a> is a complete yoga studio
+              management software. I've developed the initial web version of the product and then helped put together a team to continue evolving it. I am involved in all apsects
+              of the project from infrastructure to back-end and front-end development.
+            </p>
+          </div>
+        </div>
+        <!-- left section -->
+        <div class="flex flex-row-reverse justify-end pl-4 md:contents">
+          <!-- panel with text -->
+          <div class="bg-slate-100 relative flex-grow col-start-1 col-end-5 p-4 my-4 rounded-lg">
+            <div class="absolute right-0 top-[15px] transform translate-x-1/2 translate-y-1/2 rotate-45 w-5 h-5 bg-slate-100 invisible md:visible"></div>
+            <div class="w-5 h-5 bg-slate-100 absolute left-[-20px] top-[15px] transform translate-x-1/2 translate-y-1/2 rotate-45 visible md:invisible"></div>
+            <h2 class="font-semibold text-lg">CTO, Jiber Media</h2>
+            <div class="flex flex-row text-sm font-light mb-2">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="w-5 h-5 mt-[-1px] ml-[-2px]">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5"
+                />
+              </svg>
+              <span class="ml-1">Sep 2012 - Sep 2013</span>
+            </div>
+            <p class="tracking-tight">
+              Jiber was an experimental iOS App (initially developed for iOS6) that helped you uncover a world of similarities you share with people you meet in the real world.
+              I've developed the application (back-end and front-end) and was responsible for the infrastructure setup and maintenance.
+            </p>
+          </div>
+          <!-- line with circle -->
+          <div class="col-start-5 col-end-6 md:mx-auto relative mr-8">
+            <div class="h-full w-6 flex items-center justify-center">
+              <div class="h-full w-1 bg-slate-100 pointer-events-none"></div>
+            </div>
+            <div class="w-10 h-10 absolute top-[32px] -ml-2 rounded-full bg-slate-100 p-2">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0M12 12.75h.008v.008H12v-.008z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <!-- right section -->
+        <div class="flex pl-4 md:contents">
+          <!-- line with circle -->
+          <div class="col-start-5 col-end-6 md:mx-auto relative mr-8">
+            <div class="h-full w-6 flex items-center justify-center">
+              <div class="h-full w-1 bg-slate-100 pointer-events-none"></div>
+            </div>
+            <div class="w-10 h-10 absolute top-[32px] -ml-2 rounded-full bg-slate-100 p-2">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0M12 12.75h.008v.008H12v-.008z"
+                />
+              </svg>
+            </div>
+          </div>
+          <!-- panel with text -->
+          <div class="bg-slate-100 relative flex-grow col-start-6 col-end-10 p-4 my-4 rounded-lg">
+            <div class="absolute left-[-20px] top-[15px] transform translate-x-1/2 translate-y-1/2 rotate-45 w-5 h-5 bg-slate-100 invisible md:visible"></div>
+            <div class="w-5 h-5 bg-slate-100 absolute left-[-20px] top-[15px] transform translate-x-1/2 translate-y-1/2 rotate-45 visible md:invisible"></div>
+            <h2 class="font-semibold text-lg">Ruby On Rails and iOS Developer</h2>
+            <div class="flex flex-row text-sm font-light mb-2">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="w-5 h-5 mt-[-1px] ml-[-2px]">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5"
+                />
+              </svg>
+              <span class="ml-1">Jun 2009 - Apr 2012</span>
+            </div>
+            <p class="tracking-tight">
+              I have worked on a number of customer projects, primarily focusing on Ruby on Rails and iOS applications. I've also been advising various teams using Ruby on Rails
+              and/or RestfulX to help them get over technical hurdles and improve their code.
+            </p>
+          </div>
+        </div>
+        <!-- left section -->
+        <div class="flex flex-row-reverse justify-end pl-4 md:contents">
+          <!-- panel with text -->
+          <div class="bg-slate-100 relative flex-grow col-start-1 col-end-5 p-4 my-4 rounded-lg">
+            <div class="absolute right-0 top-[15px] transform translate-x-1/2 translate-y-1/2 rotate-45 w-5 h-5 bg-slate-100 invisible md:visible"></div>
+            <div class="w-5 h-5 bg-slate-100 absolute left-[-20px] top-[15px] transform translate-x-1/2 translate-y-1/2 rotate-45 visible md:invisible"></div>
+            <h2 class="font-semibold text-lg">CTO, Ruboss</h2>
+            <div class="flex flex-row text-sm font-light mb-2">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="w-5 h-5 mt-[-1px] ml-[-2px]">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5"
+                />
+              </svg>
+              <span class="ml-1">May 2008 - Jun 2009</span>
+            </div>
+            <p class="tracking-tight">
+              I have co-founded Ruboss with Peter Armstrong and a framework called RestfulX (The RESTful way of develop Adobe Flex and AIR application) was the result of our
+              collaboration. We focused on customer projects and doing consulting using the open-source RestfulX framework as backbone.
+            </p>
+            <p class="tracking-tight">
+              The framework utlimately became defunct as Adobe Flex/AIR market share dwindled and Adobe refocused their attention on pure HTML5 initiatives. Peter and I then parted
+              ways to focus on different projects.
+            </p>
+          </div>
+          <!-- line with circle -->
+          <div class="col-start-5 col-end-6 md:mx-auto relative mr-8">
+            <div class="h-full w-6 flex items-center justify-center">
+              <div class="h-full w-1 bg-slate-100 pointer-events-none"></div>
+            </div>
+            <div class="w-10 h-10 absolute top-[32px] -ml-2 rounded-full bg-slate-100 p-2">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0M12 12.75h.008v.008H12v-.008z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <!-- right section -->
+        <div class="flex pl-4 md:contents">
+          <!-- line with circle -->
+          <div class="col-start-5 col-end-6 md:mx-auto relative mr-8">
+            <div class="h-full w-6 flex items-center justify-center">
+              <div class="h-full w-1 bg-slate-100 pointer-events-none"></div>
+            </div>
+            <div class="w-10 h-10 absolute top-[32px] -ml-2 rounded-full bg-slate-100 p-2">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0M12 12.75h.008v.008H12v-.008z"
+                />
+              </svg>
+            </div>
+          </div>
+          <!-- panel with text -->
+          <div class="bg-slate-100 relative flex-grow col-start-6 col-end-10 p-4 my-4 rounded-lg">
+            <div class="absolute left-[-20px] top-[15px] transform translate-x-1/2 translate-y-1/2 rotate-45 w-5 h-5 bg-slate-100 invisible md:visible"></div>
+            <div class="w-5 h-5 bg-slate-100 absolute left-[-20px] top-[15px] transform translate-x-1/2 translate-y-1/2 rotate-45 visible md:invisible"></div>
+            <h2 class="font-semibold text-lg">Software Developer, SAP</h2>
+            <div class="flex flex-row text-sm font-light mb-2">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="w-5 h-5 mt-[-1px] ml-[-2px]">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5"
+                />
+              </svg>
+              <span class="ml-1">May 2007 - May 2008</span>
+            </div>
+            <p class="tracking-tight">
+              Participated in the development of Business Objects Voyager, a JavaScript/Ajax/ JSF-based Web 2.0 OLAP solution taking responsibility for several key subsystems.
+            </p>
+          </div>
+        </div>
+        <!-- left section -->
+        <div class="flex flex-row-reverse justify-end pl-4 md:contents">
+          <!-- panel with text -->
+          <div class="bg-slate-100 relative flex-grow col-start-1 col-end-5 p-4 my-4 rounded-lg">
+            <div class="absolute right-0 top-[15px] transform translate-x-1/2 translate-y-1/2 rotate-45 w-5 h-5 bg-slate-100 invisible md:visible"></div>
+            <div class="w-5 h-5 bg-slate-100 absolute left-[-20px] top-[15px] transform translate-x-1/2 translate-y-1/2 rotate-45 visible md:invisible"></div>
+            <h2 class="font-semibold text-lg">Master of Software Systems, UBC</h2>
+            <div class="flex flex-row text-sm font-light mb-2">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="w-5 h-5 mt-[-1px] ml-[-2px]">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5"
+                />
+              </svg>
+              <span class="ml-1">May 2007</span>
+            </div>
+          </div>
+          <!-- line with circle -->
+          <div class="col-start-5 col-end-6 md:mx-auto relative mr-8">
+            <div class="h-full w-6 flex items-center justify-center">
+              <div class="h-full w-1 bg-slate-100 pointer-events-none"></div>
+            </div>
+            <div class="w-10 h-10 absolute top-[32px] -ml-2 rounded-full bg-slate-100 p-2">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <!-- end of content circle -->
+        <div class="flex pl-4 md:contents">
+          <!-- line with circle -->
+          <div class="col-start-5 col-end-6 md:mx-auto relative mr-8 mb-10">
+            <div class="h-8 w-6 flex items-center justify-center">
+              <div class="h-full w-1 bg-slate-100 pointer-events-none"></div>
+            </div>
+            <div class="w-10 h-10 absolute top-[32px] -ml-2 rounded-full bg-slate-100 p-2">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
