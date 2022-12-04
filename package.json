@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "start": "parcel",
+    "prebuild": "rm -rf dist",
     "build": "parcel build",
     "format": "prettier --cache --write ."
   },
