@@ -1,3 +1,3 @@
 # Personal Website
 
-Built with Tailwindcss + Parcel
+Built with TailwindCSS + Parcel
