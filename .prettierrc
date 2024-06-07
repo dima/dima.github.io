@@ -1,0 +1,8 @@
+{
+  "printWidth": 180,
+  "singleQuote": false,
+  "trailingComma": "es5",
+  "proseWrap": "never",
+  "semi": false,
+  "overrides": [{ "files": ".prettierrc", "options": { "parser": "json" } }]
+}
