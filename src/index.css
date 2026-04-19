@@ -1,12 +1,10 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 body {
   font-family:
-    "Inter",
     system-ui,
     -apple-system,
+    "Inter",
     BlinkMacSystemFont,
     "Segoe UI",
     Roboto,
