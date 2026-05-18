@@ -1,0 +1,25 @@
+{
+  "name": "dima.github.io",
+  "source": "src/index.html",
+  "private": true,
+  "scripts": {
+    "dev": "parcel",
+    "prebuild": "rm -rf dist",
+    "build": "parcel build && node scripts/convert.js",
+    "preview": "npx serve dist",
+    "format": "prettier --cache --write ."
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "parcel": "^2.16.4",
+    "postcss": "^8.5.8",
+    "prettier": "^3.8.1",
+    "tailwindcss": "^4",
+    "turndown": "^7.2.4",
+    "turndown-plugin-gfm": "^1.0.2"
+  },
+  "packageManager": "pnpm@10.33.0",
+  "engines": {
+    "node": ">=22"
+  }
+}

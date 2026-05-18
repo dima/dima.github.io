@@ -1,0 +1,525 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Dima Berastau - Application Design and Development for Finance and Investing</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PLZFCGWMFS"></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag("js", new Date())
+
+      gtag("config", "G-PLZFCGWMFS")
+    </script>
+    <meta name="description" content="personal website, dima berastau, software development, react, reactnative, python, rust, go, ruby" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
+    <link href="./index.css" rel="stylesheet" />
+  </head>
+  <body class="bg-white dark:bg-zinc-900">
+    <button
+      onclick="window.open('index.md', '_blank')"
+      type="button"
+      class="absolute top-4 right-4 z-50 text-xs font-light text-gray-400 hover:text-gray-600 dark:text-gray-500 dark:hover:text-gray-300 transition-colors cursor-pointer"
+    >
+      View in markdown
+    </button>
+    <div class="container mx-auto px-4 pb-10 max-w-4xl text-gray-800 dark:text-white">
+      <section id="header">
+        <img src="./profile.jpg" alt="Photo" width="100px" height="100px" class="mx-auto mt-10 rounded-full border-4 border-solid border-slate-100 dark:border-slate-800" />
+        <div class="h-4 w-6 flex items-center justify-center mx-auto">
+          <div class="h-full w-1 bg-slate-100 dark:bg-slate-800 pointer-events-none"></div>
+        </div>
+        <div class="bg-slate-100 dark:bg-slate-800 p-4 rounded-lg tracking-tight">
+          <p class="mb-4">
+            Hi, my name is <b>Dima Berastau</b> and I am full-stack web and mobile application developer with a passion for financial markets and investing currently based in
+            <b>Ronda, Spain</b>. I've been involved in all aspects of software development for over 15 years. While I've started my career with big businesses such as SAP and RIM
+            I've quickly gravitated towards start-ups where my ability to adapt and take on whatever technical challenges laid ahead could make a real difference. Currently my
+            focus is on React/ReactNative Applications written with TypeScript, Python and Rust but my experience spans a wide range of technologies, languagues and platforms. My
+            <i>forté</i> is taking a concept from idea to a working web/mobile MVP, sometimes with little to no external help.
+          </p>
+          <p class="mb-4">
+            Over the last 5+ years my focus has shifted towards financial markets and investing. My dream is to combine my technical skills with my passion for investing to build
+            tools that empower individual investors. I am currently working on the all-in-one portfolio management platform for retail investors and their AI agents called
+            <a href="https://www.sortinox.com" target="_blank" class="font-medium text-blue-600 dark:text-blue-400 hover:underline decoration-dashed">Sortinox</a>.
+          </p>
+          <p>When I am not working I like to bike, climb, ski and take photos occasionally. I am fluent in English, Russian and Spanish.</p>
+          <p class="mt-2">
+            <a
+              href="mailto:dima.berastau@gmail.com"
+              class="text-white bg-blue-500 hover:bg-blue-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center mr-2"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://github.com/dima"
+              target="_blank"
+              class="text-white bg-gray-700 hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-6 h-6">
+                <path
+                  d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"
+                />
+              </svg>
+            </a>
+          </p>
+        </div>
+      </section>
+      <section id="content" class="flex flex-col grid-cols-9 mx-auto md:grid">
+        <!-- left section -->
+        <div class="flex flex-row-reverse justify-end pl-4 md:contents">
+          <!-- panel with text -->
+          <div class="bg-slate-100 dark:bg-slate-800 relative flex-grow col-start-1 col-end-5 p-4 mt-4 rounded-lg">
+            <div class="absolute right-0 top-[15px] transform translate-x-1/2 translate-y-1/2 rotate-45 w-5 h-5 bg-slate-100 dark:bg-slate-800 invisible md:visible"></div>
+            <div class="w-5 h-5 bg-slate-100 dark:bg-slate-800 absolute left-[-20px] top-[15px] transform translate-x-1/2 translate-y-1/2 rotate-45 visible md:invisible"></div>
+            <h2 class="font-semibold text-lg">Founder, Sortinox</h2>
+            <div class="flex flex-row text-sm font-light mb-1 mt-1">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="w-5 h-5 mt-[-1px] ml-[-2px]">
+                <path
+                  stroke="#000000"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5"
+                />
+              </svg>
+              <span class="ml-1">Nov 2025 - Current</span>
+            </div>
+            <div class="flex flex-row text-sm font-light mb-2">
+              <svg class="w-5 h-5 mt-[-1px] ml-[-2px]" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z"
+                  stroke="#000000"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M12 12C13.1046 12 14 11.1046 14 10C14 8.89543 13.1046 8 12 8C10.8954 8 10 8.89543 10 10C10 11.1046 10.8954 12 12 12Z"
+                  stroke="#000000"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span class="ml-1">Ronda, Spain</span>
+            </div>
+            <p class="tracking-tight">
+              <a href="https://www.sortinox.com" target="_blank" class="font-medium text-blue-600 dark:text-blue-400 hover:underline decoration-dashed">Sortinox</a>
+              (Built with React/ReactNative TypeScript, Python and Rust) the all-in-one portfolio management platform for retail investors and their AI agents.
+            </p>
+          </div>
+          <!-- line with circle -->
+          <div class="col-start-5 col-end-6 md:mx-auto relative mr-8">
+            <div class="h-full w-6 flex items-center justify-center">
+              <div class="h-full w-1 bg-slate-100 dark:bg-slate-800 pointer-events-none"></div>
+            </div>
+            <div class="w-10 h-10 absolute top-[32px] -ml-2 rounded-full bg-slate-100 dark:bg-slate-800 p-2">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path
+                  stroke="#000000"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0M12 12.75h.008v.008H12v-.008z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <!-- right section -->
+        <div class="flex pl-4 md:contents">
+          <!-- line with circle -->
+          <div class="col-start-5 col-end-6 md:mx-auto relative mr-8">
+            <div class="h-full w-6 flex items-center justify-center">
+              <div class="h-full w-1 bg-slate-100 dark:bg-slate-800 pointer-events-none"></div>
+            </div>
+            <div class="w-10 h-10 absolute top-[32px] -ml-2 rounded-full bg-slate-100 dark:bg-slate-800 p-2">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path
+                  stroke="#000000"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0M12 12.75h.008v.008H12v-.008z"
+                />
+              </svg>
+            </div>
+          </div>
+          <!-- panel with text -->
+          <div class="bg-slate-100 dark:bg-slate-800 relative flex-grow col-start-6 col-end-10 p-4 mt-4 rounded-lg">
+            <div class="w-5 h-5 bg-slate-100 dark:bg-slate-800 absolute left-[-20px] top-[15px] transform translate-x-1/2 translate-y-1/2 rotate-45"></div>
+            <h2 class="font-semibold text-lg">Development Team Lead, Karmasoft</h2>
+            <div class="flex flex-row text-sm font-light mb-1 mt-1">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="w-5 h-5 mt-[-1px] ml-[-2px]">
+                <path
+                  stroke="#000000"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5"
+                />
+              </svg>
+              <span class="ml-1">Sep 2017 - Nov 2025</span>
+            </div>
+            <div class="flex flex-row text-sm font-light mb-2">
+              <svg class="w-5 h-5 mt-[-1px] ml-[-2px]" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z"
+                  stroke="#000000"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M12 12C13.1046 12 14 11.1046 14 10C14 8.89543 13.1046 8 12 8C10.8954 8 10 8.89543 10 10C10 11.1046 10.8954 12 12 12Z"
+                  stroke="#000000"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span class="ml-1">Whistler, BC, Canada (Remote)</span>
+            </div>
+            <div class="flex flex-row text-sm font-light mb-2">
+              <svg class="w-5 h-5 mt-[-1px] ml-[-2px]" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z"
+                  stroke="#000000"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M12 12C13.1046 12 14 11.1046 14 10C14 8.89543 13.1046 8 12 8C10.8954 8 10 8.89543 10 10C10 11.1046 10.8954 12 12 12Z"
+                  stroke="#000000"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span class="ml-1">Ronda, Spain (Remote)</span>
+            </div>
+            <p class="tracking-tight">
+              <a href="https://www.karmasoft.io" target="_blank" class="font-medium text-blue-600 dark:text-blue-400 hover:underline decoration-dashed">Karmasoft</a> is a complete
+              yoga studio management software. I've developed the initial web version of the product and then helped put together a small, fully-remote (up to 6 person) team to
+              continue evolving it. I was involved in all technical aspects of the project from infrastructure to back-end and front-end development as well as recruiting and
+              mentoring the team. The system has been developed using Ruby on Rails with companion iOS/Android mobile apps built with React Native. It has been deployed on a
+              Kubernetes cluster and used Grafana stack for monitoring.
+            </p>
+          </div>
+        </div>
+
+        <!-- left section -->
+        <div class="flex flex-row-reverse justify-end pl-4 md:contents">
+          <!-- panel with text -->
+          <div class="bg-slate-100 dark:bg-slate-800 relative flex-grow col-start-1 col-end-5 p-4 mt-4 rounded-lg">
+            <div class="absolute right-0 top-[15px] transform translate-x-1/2 translate-y-1/2 rotate-45 w-5 h-5 bg-slate-100 dark:bg-slate-800 invisible md:visible"></div>
+            <div class="w-5 h-5 bg-slate-100 dark:bg-slate-800 absolute left-[-20px] top-[15px] transform translate-x-1/2 translate-y-1/2 rotate-45 visible md:invisible"></div>
+            <h2 class="font-semibold text-lg">Ruby on Rails and iOS Developer</h2>
+            <div class="flex flex-row text-sm font-light mb-1 mt-1">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="w-5 h-5 mt-[-1px] ml-[-2px]">
+                <path
+                  stroke="#000000"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5"
+                />
+              </svg>
+              <span class="ml-1">June 2010 - Sep 2017</span>
+            </div>
+            <div class="flex flex-row text-sm font-light mb-2">
+              <svg class="w-5 h-5 mt-[-1px] ml-[-2px]" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z"
+                  stroke="#000000"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M12 12C13.1046 12 14 11.1046 14 10C14 8.89543 13.1046 8 12 8C10.8954 8 10 8.89543 10 10C10 11.1046 10.8954 12 12 12Z"
+                  stroke="#000000"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span class="ml-1">Vancouver, BC, Canada (Contract)</span>
+            </div>
+            <div class="flex flex-row text-sm font-light mb-2">
+              <svg class="w-5 h-5 mt-[-1px] ml-[-2px]" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z"
+                  stroke="#000000"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M12 12C13.1046 12 14 11.1046 14 10C14 8.89543 13.1046 8 12 8C10.8954 8 10 8.89543 10 10C10 11.1046 10.8954 12 12 12Z"
+                  stroke="#000000"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span class="ml-1">Whistler, BC, Canada (Remote)</span>
+            </div>
+            <p class="tracking-tight">I have worked on a number of customer projects, primarily focusing on Ruby on Rails, RestfulX and iOS applications.</p>
+            <p class="tracking-light mt-2">
+              During this time I've developed React-Native applications for Picatic (later acquired by Eventbrite). I've also been advising various teams using Ruby on Rails and/or
+              RestfulX (including the New Mexico Department of Agriculture/New Mexico State University) to help them get over technical hurdles and improve their code.
+            </p>
+          </div>
+          <!-- line with circle -->
+          <div class="col-start-5 col-end-6 md:mx-auto relative mr-8">
+            <div class="h-full w-6 flex items-center justify-center">
+              <div class="h-full w-1 bg-slate-100 dark:bg-slate-800 pointer-events-none"></div>
+            </div>
+            <div class="w-10 h-10 absolute top-[32px] -ml-2 rounded-full bg-slate-100 dark:bg-slate-800 p-2">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path
+                  stroke="#000000"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0M12 12.75h.008v.008H12v-.008z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <!-- right section -->
+        <div class="flex pl-4 md:contents">
+          <!-- line with circle -->
+          <div class="col-start-5 col-end-6 md:mx-auto relative mr-8">
+            <div class="h-full w-6 flex items-center justify-center">
+              <div class="h-full w-1 bg-slate-100 dark:bg-slate-800 pointer-events-none"></div>
+            </div>
+            <div class="w-10 h-10 absolute top-[32px] -ml-2 rounded-full bg-slate-100 dark:bg-slate-800 p-2">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path
+                  stroke="#000000"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0M12 12.75h.008v.008H12v-.008z"
+                />
+              </svg>
+            </div>
+          </div>
+          <!-- panel with text -->
+          <div class="bg-slate-100 dark:bg-slate-800 relative flex-grow col-start-6 col-end-10 p-4 mt-4 rounded-lg">
+            <div class="w-5 h-5 bg-slate-100 dark:bg-slate-800 absolute left-[-20px] top-[15px] transform translate-x-1/2 translate-y-1/2 rotate-45"></div>
+            <h2 class="font-semibold text-lg">Co-Founder, Ruboss</h2>
+            <div class="flex flex-row text-sm font-light mb-1 mt-1">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="w-5 h-5 mt-[-1px] ml-[-2px]">
+                <path
+                  stroke="#000000"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5"
+                />
+              </svg>
+              <span class="ml-1">May 2008 - Jun 2010</span>
+            </div>
+            <div class="flex flex-row text-sm font-light mb-2">
+              <svg class="w-5 h-5 mt-[-1px] ml-[-2px]" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z"
+                  stroke="#000000"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M12 12C13.1046 12 14 11.1046 14 10C14 8.89543 13.1046 8 12 8C10.8954 8 10 8.89543 10 10C10 11.1046 10.8954 12 12 12Z"
+                  stroke="#000000"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span class="ml-1">Vancouver, BC, Canada</span>
+            </div>
+            <p class="tracking-tight">
+              I have co-founded Ruboss with Peter Armstrong and a framework called RestfulX (The RESTful way of develop Adobe Flex and AIR application) was the result of our
+              collaboration. We focused on customer projects and doing consulting using the open-source RestfulX framework as backbone.
+            </p>
+            <p class="tracking-tight">
+              The framework utlimately became defunct as Adobe Flex/AIR market share dwindled and Adobe refocused their attention on pure HTML5 initiatives. Peter and I then parted
+              ways to focus on different projects.
+            </p>
+          </div>
+        </div>
+        <!-- left section -->
+        <div class="flex flex-row-reverse justify-end pl-4 md:contents">
+          <!-- panel with text -->
+          <div class="bg-slate-100 dark:bg-slate-800 relative flex-grow col-start-1 col-end-5 p-4 mt-4 rounded-lg">
+            <div class="absolute right-0 top-[15px] transform translate-x-1/2 translate-y-1/2 rotate-45 w-5 h-5 bg-slate-100 dark:bg-slate-800 invisible md:visible"></div>
+            <div class="w-5 h-5 bg-slate-100 dark:bg-slate-800 absolute left-[-20px] top-[15px] transform translate-x-1/2 translate-y-1/2 rotate-45 visible md:invisible"></div>
+            <h2 class="font-semibold text-lg">Software Developer, SAP</h2>
+            <div class="flex flex-row text-sm font-light mb-1 mt-1">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="w-5 h-5 mt-[-1px] ml-[-2px]">
+                <path
+                  stroke="#000000"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5"
+                />
+              </svg>
+              <span class="ml-1">May 2007 - May 2008</span>
+            </div>
+            <div class="flex flex-row text-sm font-light mb-2">
+              <svg class="w-5 h-5 mt-[-1px] ml-[-2px]" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z"
+                  stroke="#000000"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M12 12C13.1046 12 14 11.1046 14 10C14 8.89543 13.1046 8 12 8C10.8954 8 10 8.89543 10 10C10 11.1046 10.8954 12 12 12Z"
+                  stroke="#000000"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span class="ml-1">Vancouver, BC, Canada</span>
+            </div>
+            <p class="tracking-tight">
+              Participated in the development of Business Objects Voyager, a JavaScript/Ajax/ JSF-based Web 2.0 OLAP solution taking responsibility for several key subsystems.
+            </p>
+          </div>
+          <!-- line with circle -->
+          <div class="col-start-5 col-end-6 md:mx-auto relative mr-8">
+            <div class="h-full w-6 flex items-center justify-center">
+              <div class="h-full w-1 bg-slate-100 dark:bg-slate-800 pointer-events-none"></div>
+            </div>
+            <div class="w-10 h-10 absolute top-[32px] -ml-2 rounded-full bg-slate-100 dark:bg-slate-800 p-2">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path
+                  stroke="#000000"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0M12 12.75h.008v.008H12v-.008z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <!-- right section -->
+        <div class="flex pl-4 md:contents">
+          <!-- line with circle -->
+          <div class="col-start-5 col-end-6 md:mx-auto relative mr-8">
+            <div class="h-full w-6 flex items-center justify-center">
+              <div class="h-full w-1 bg-slate-100 dark:bg-slate-800 pointer-events-none"></div>
+            </div>
+            <div class="w-10 h-10 absolute top-[32px] -ml-2 rounded-full bg-slate-100 dark:bg-slate-800 p-2">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path
+                  stroke="#000000"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0M12 12.75h.008v.008H12v-.008z"
+                />
+              </svg>
+            </div>
+          </div>
+          <!-- panel with text -->
+          <div class="bg-slate-100 dark:bg-slate-800 relative flex-grow col-start-6 col-end-10 p-4 mt-4 rounded-lg">
+            <div class="w-5 h-5 bg-slate-100 dark:bg-slate-800 absolute left-[-20px] top-[15px] transform translate-x-1/2 translate-y-1/2 rotate-45"></div>
+            <h2 class="font-semibold text-lg">Master of Software Systems, UBC</h2>
+            <div class="flex flex-row text-sm font-light mb-1 mt-1">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="w-5 h-5 mt-[-1px] ml-[-2px]">
+                <path
+                  stroke="#000000"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5"
+                />
+              </svg>
+              <span class="ml-1">September 2006 - May 2007</span>
+            </div>
+            <div class="flex flex-row text-sm font-light mb-2">
+              <svg class="w-5 h-5 mt-[-1px] ml-[-2px]" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z"
+                  stroke="#000000"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M12 12C13.1046 12 14 11.1046 14 10C14 8.89543 13.1046 8 12 8C10.8954 8 10 8.89543 10 10C10 11.1046 10.8954 12 12 12Z"
+                  stroke="#000000"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span class="ml-1">Vancouver, BC, Canada</span>
+            </div>
+          </div>
+          <!-- line with circle -->
+          <div class="col-start-5 col-end-6 md:mx-auto relative mr-8">
+            <div class="h-full w-6 flex items-center justify-center">
+              <div class="h-full w-1 bg-slate-100 dark:bg-slate-800 pointer-events-none"></div>
+            </div>
+            <div class="w-10 h-10 absolute top-[32px] -ml-2 rounded-full bg-slate-100 dark:bg-slate-800 p-2">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path
+                  stroke="#000000"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0 a48.667 48.667 0 00-7.5 0M12 12.75h.008v.008H12v-.008z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <!-- end of content circle -->
+        <div class="flex pl-4 md:contents">
+          <!-- line with circle -->
+          <div class="col-start-5 col-end-6 md:mx-auto relative mr-8 mb-10">
+            <div class="h-8 w-6 flex items-center justify-center">
+              <div class="h-full w-1 bg-slate-100 dark:bg-slate-800 pointer-events-none"></div>
+            </div>
+            <div class="w-10 h-10 absolute top-[32px] -ml-2 rounded-full bg-slate-100 dark:bg-slate-800 p-2">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path
+                  stroke="#000000"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
