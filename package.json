@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "parcel",
     "prebuild": "rm -rf dist",
-    "build": "parcel build && node scripts/convert.js",
+    "build": "parcel build && node scripts/convert.mjs",
     "preview": "npx serve dist",
     "format": "prettier --cache --write ."
   },

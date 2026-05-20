@@ -1,7 +1,10 @@
-const TurndownService = require("turndown")
-const turndownPluginGfm = require("turndown-plugin-gfm")
-const fs = require("fs")
-const path = require("path")
+import * as fs from "fs"
+import * as path from "path"
+import TurndownService from "turndown"
+import * as turndownPluginGfm from "turndown-plugin-gfm"
+import { fileURLToPath } from "url"
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
 const turndownService = new TurndownService({
   headingStyle: "atx",
