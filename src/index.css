@@ -15,3 +15,15 @@ body {
     "Helvetica Neue",
     sans-serif;
 }
+
+.linkedin-button {
+  background-color: #0e76a8;
+}
+
+.linkedin-button:hover {
+  background-color: #0b5d8c;
+}
+
+.linkedin-button:hover .linkedin-circle {
+  fill: #0b5d8c;
+}
