@@ -6,7 +6,7 @@
     "dev": "parcel",
     "prebuild": "rm -rf dist",
     "build": "parcel build && node scripts/convert.mjs",
-    "preview": "npx serve dist",
+    "preview": "pnpm dlx serve dist",
     "format": "prettier --cache --write ."
   },
   "devDependencies": {
