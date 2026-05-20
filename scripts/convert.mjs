@@ -34,8 +34,9 @@ markdown = markdown.replace(/View in markdown/gi, "")
 markdown = markdown.replace(/!\[Photo\]\(\.\/profile\.jpg\)/g, "")
 
 // Replace empty links with descriptive text
-markdown = markdown.replace(/\[\]\(mailto:([^)]+)\)/g, "[Email](mailto:$1)")
-markdown = markdown.replace(/\[\]\(https:\/\/github\.com\/([^)]+)\)/g, ", [Github Profile](https://github.com/$1)")
+markdown = markdown.replace(/\[\]\(mailto:([^)]+)\)/g, "* [Email](mailto:$1)\n")
+markdown = markdown.replace(/\[\]\(https:\/\/github\.com\/([^)]+)\)/g, "* [Github Profile](https://github.com/$1)\n")
+markdown = markdown.replace(/\[\]\(https:\/\/www\.linkedin\.com\/in\/([^)]+)\)/g, "* [LinkedIn Profile](https://www.linkedin.com/in/$1)\n")
 
 // Add "#" to the first line
 const lines = markdown.split("\n")
