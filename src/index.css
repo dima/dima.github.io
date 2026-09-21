@@ -18,11 +18,11 @@ body {
     sans-serif;
 }
 
-path[stroke="#000000"] {
+#content svg path[stroke] {
   stroke: currentColor;
 }
 
-html.dark path[stroke="#000000"] {
+html.dark #content svg path[stroke] {
   stroke: #f8fafc;
 }
 
