@@ -20,6 +20,12 @@ turndownService.addRule("strip-scripts", {
   replacement: () => "",
 })
 
+// Exclude interactive controls from the generated markdown
+turndownService.addRule("strip-theme-toggle", {
+  filter: (node) => node.nodeName === "BUTTON" && node.id === "theme-toggle",
+  replacement: () => "",
+})
+
 // Load the source HTML
 const htmlPath = path.join(__dirname, "..", "src", "index.html")
 const html = fs.readFileSync(htmlPath, "utf8")
@@ -38,6 +44,9 @@ markdown = markdown.replace(/\[\]\(mailto:([^)]+)\)/g, "* [Email](mailto:$1)\n")
 markdown = markdown.replace(/\[\]\(https:\/\/github\.com\/([^)]+)\)/g, "* [Github Profile](https://github.com/$1)\n")
 markdown = markdown.replace(/\[\]\(https:\/\/www\.linkedin\.com\/in\/([^)]+)\)/g, "* [LinkedIn Profile](https://www.linkedin.com/in/$1)\n")
 
+// Keep the generated markdown compact after removing page-only controls
+markdown = markdown.replace(/[ \t]+\n/g, "\n").replace(/\n{3,}/g, "\n\n").trim()
+
 // Add "#" to the first line
 const lines = markdown.split("\n")
 if (lines.length > 0) {
@@ -53,6 +62,6 @@ if (!fs.existsSync(distDir)) {
 }
 
 // Write the markdown file
-fs.writeFileSync(path.join(distDir, "index.md"), markdown)
+fs.writeFileSync(path.join(distDir, "index.md"), markdown + "\n")
 
 console.log("Successfully converted src/index.html to dist/index.md")
