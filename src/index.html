@@ -15,12 +15,32 @@
     <meta name="description" content="personal website, dima berastau, software development, react, reactnative, python, rust, go, ruby" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      const savedTheme = localStorage.getItem("theme")
+      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches
+      document.documentElement.classList.toggle("dark", savedTheme === "dark" || (!savedTheme && prefersDark))
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
     <link href="./index.css" rel="stylesheet" />
   </head>
   <body class="bg-white dark:bg-zinc-900">
+    <button
+      id="theme-toggle"
+      type="button"
+      class="absolute top-3 left-3 z-50 rounded-full p-2 text-gray-500 hover:bg-slate-100 hover:text-gray-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:text-gray-400 dark:hover:bg-slate-800 dark:hover:text-white dark:focus:ring-blue-800 transition-colors cursor-pointer"
+      aria-label="Switch to dark mode"
+      aria-pressed="false"
+    >
+      <svg class="h-5 w-5 dark:hidden" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 15.002A9.718 9.718 0 0118 15.75C12.615 15.75 8.25 11.385 8.25 6a9.716 9.716 0 01.75-3.75 9.753 9.753 0 00-6.75 9.25c0 5.385 4.365 9.75 9.75 9.75a9.753 9.753 0 009.75-6.248z" />
+      </svg>
+      <svg class="hidden h-5 w-5 dark:block" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1.5m0 15V21m9-9h-1.5M4.5 12H3m15.364 6.364-1.06-1.06M6.697 6.697l-1.06-1.06m12.728 0-1.06 1.06M6.697 17.303l-1.06 1.06M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
+      </svg>
+      <span class="sr-only">Toggle color theme</span>
+    </button>
     <button
       onclick="window.open('index.md', '_blank')"
       type="button"
@@ -535,5 +555,20 @@
         </div>
       </section>
     </div>
+    <script>
+      const themeToggle = document.getElementById("theme-toggle")
+
+      function updateTheme(isDark) {
+        document.documentElement.classList.toggle("dark", isDark)
+        localStorage.setItem("theme", isDark ? "dark" : "light")
+        themeToggle.setAttribute("aria-pressed", String(isDark))
+        themeToggle.setAttribute("aria-label", `Switch to ${isDark ? "light" : "dark"} mode`)
+      }
+
+      const isDark = document.documentElement.classList.contains("dark")
+      themeToggle.setAttribute("aria-pressed", String(isDark))
+      themeToggle.setAttribute("aria-label", `Switch to ${isDark ? "light" : "dark"} mode`)
+      themeToggle.addEventListener("click", () => updateTheme(!document.documentElement.classList.contains("dark")))
+    </script>
   </body>
 </html>
