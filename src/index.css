@@ -22,6 +22,10 @@ path[stroke="#000000"] {
   stroke: currentColor;
 }
 
+html.dark path[stroke="#000000"] {
+  stroke: #f8fafc;
+}
+
 .linkedin-button {
   background-color: #0e76a8;
 }
